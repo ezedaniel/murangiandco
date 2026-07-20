@@ -1,0 +1,2382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>Murangi &amp; Co | Chartered Accountants</title>
+<meta name="description" content="Murangi &amp; Co is a UK chartered accountancy practice offering bookkeeping and automation, statutory filings, Making Tax Digital, fractional CFO support, personal tax returns and financial planning for growing businesses and individuals.">
+<meta name="author" content="Murangi &amp; Co">
+<meta name="theme-color" content="#3a422e">
+<link rel="canonical" href="https://www.murangiandco.com/">
+
+<!-- Favicons (relative paths, GitHub Pages safe) -->
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="images/icon-192.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="manifest" href="assets/site.webmanifest">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Murangi &amp; Co">
+<meta property="og:title" content="Murangi &amp; Co | Chartered Accountants">
+<meta property="og:description" content="Murangi &amp; Co is a UK chartered accountancy practice offering bookkeeping and automation, statutory filings, Making Tax Digital, fractional CFO support, personal tax returns and financial planning for growing businesses and individuals.">
+<meta property="og:url" content="https://www.murangiandco.com/">
+<meta property="og:image" content="https://www.murangiandco.com/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_GB">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Murangi &amp; Co | Chartered Accountants">
+<meta name="twitter:description" content="Murangi &amp; Co is a UK chartered accountancy practice offering bookkeeping and automation, statutory filings, Making Tax Digital, fractional CFO support, personal tax returns and financial planning for growing businesses and individuals.">
+<meta name="twitter:image" content="https://www.murangiandco.com/images/og-image.jpg">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- Calendly -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+
+<!-- Stylesheet -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ══════════════════════════════════════ NAV ══════════════════════════════════════ -->
+<nav class="nav">
+  <div class="nav-logo-wrap" onclick="showPage('home')">
+    <img class="nav-logo-mark" src="images/logo-monogram.png" alt="Murangi &amp; Co monogram">
+    <div>
+      <div class="nav-logo">MURANGI & CO</div>
+      <div class="nav-tagline">FINANCIAL ADVISORY</div>
+    </div>
+  </div>
+  <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-links" id="nav-links">
+    <span class="nav-link active" id="nav-home" onclick="showPage('home')">HOME</span>
+    <span class="nav-link" id="nav-about" onclick="showPage('about')">ABOUT</span>
+    <div class="nav-mega-wrap" id="nav-mega-wrap">
+      <span class="nav-link nav-link-mega" id="nav-services" onclick="handleServicesClick(event)">
+        SERVICES
+        <svg class="nav-chev" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </span>
+      <div class="mega-menu" id="mega-menu">
+        <div class="mega-menu-inner">
+
+          <div class="mega-col">
+            <div class="mega-col-label">
+              <div class="mega-col-line"></div>
+              <div class="mega-col-text">FOR BUSINESSES</div>
+            </div>
+            <div class="mega-items">
+
+              <div class="mega-item" onclick="showPage('service-bookkeeping')">
+                <div class="mega-item-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                </div>
+                <div class="mega-item-text">
+                  <div class="mega-item-title">Bookkeeping Automation &amp; Setup</div>
+                  <div class="mega-item-sub">Clean books. Xero set up. Audit-ready.</div>
+                </div>
+              </div>
+
+              <div class="mega-item" onclick="showPage('service-filings')">
+                <div class="mega-item-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                </div>
+                <div class="mega-item-text">
+                  <div class="mega-item-title">Financial Statements &amp; Statutory Filings</div>
+                  <div class="mega-item-sub">Annual accounts, CT600, VAT, on time.</div>
+                </div>
+              </div>
+
+              <div class="mega-item" onclick="showPage('service-mtd')">
+                <div class="mega-item-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18" stroke-width="2"/></svg>
+                </div>
+                <div class="mega-item-text">
+                  <div class="mega-item-title">Making Tax Digital Compliance</div>
+                  <div class="mega-item-sub">MTD-ready before the deadline hits.</div>
+                </div>
+              </div>
+
+              <div class="mega-item" onclick="showPage('service-cfo')">
+                <div class="mega-item-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 17 9 11 13 15 21 7"/><polyline points="14 7 21 7 21 14"/></svg>
+                </div>
+                <div class="mega-item-text">
+                  <div class="mega-item-title">Fractional CFO &amp; Strategic Advisory</div>
+                  <div class="mega-item-sub">Finance Director thinking, on flexible terms.</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="mega-col">
+            <div class="mega-col-label">
+              <div class="mega-col-line"></div>
+              <div class="mega-col-text">FOR INDIVIDUALS</div>
+            </div>
+            <div class="mega-items">
+
+              <div class="mega-item" onclick="showPage('service-personal-tax')">
+                <div class="mega-item-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16l3-2 2 2 2-2 2 2 2-2 3 2V4a2 2 0 0 0-2-2z"/><line x1="8" y1="9" x2="16" y2="9"/><line x1="8" y1="13" x2="14" y2="13"/></svg>
+                </div>
+                <div class="mega-item-text">
+                  <div class="mega-item-title">Personal Tax Returns &amp; Planning</div>
+                  <div class="mega-item-sub">Filed properly. Planned properly.</div>
+                </div>
+              </div>
+
+              <div class="mega-item" onclick="showPage('service-financial-planning')">
+                <div class="mega-item-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                </div>
+                <div class="mega-item-text">
+                  <div class="mega-item-title">Personal Financial Planning &amp; Budgeting</div>
+                  <div class="mega-item-sub">A clear picture. A realistic plan.</div>
+                </div>
+              </div>
+
+              <div class="mega-cta" onclick="showPage('contact')">
+                <div class="mega-cta-text">
+                  <div class="mega-cta-title">Not sure what you need?</div>
+                  <div class="mega-cta-sub">Book a free 30-min consultation</div>
+                </div>
+                <svg class="mega-cta-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <span class="nav-link" id="nav-packages" onclick="showPage('packages')">PACKAGES</span>
+    <span class="nav-link" id="nav-contact" onclick="showPage('contact')">CONTACT</span>
+    <button class="nav-cta" onclick="showPage('contact')">BOOK A CONSULTATION</button>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════ HOME PAGE ══════════════════════════════════════ -->
+<div class="page active" id="page-home">
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-photo-panel">
+      <div class="hero-photo-bg">
+        <img class="hero-photo-img" src="images/hero-home.jpg" alt="Young professionals working together around a laptop">
+      </div>
+    </div>
+    <div class="hero-gradient"></div>
+    <div style="width:100%;">
+      <div class="hero-content">
+        <div class="hero-eyebrow">CHARTERED ACCOUNTANTS · UNITED KINGDOM</div>
+        <div class="hero-h1">Simplifying <em>finances.</em><br>Empowering growth.</div>
+        <div class="hero-sub">We cut through the complexity of finances so that you can focus on building, growing, and planning for what comes next.</div>
+        <div class="hero-btns">
+          <button class="btn-primary" onclick="showPage('contact')">BOOK A FREE CONSULTATION</button>
+          <button class="btn-secondary" onclick="showPage('services')">EXPLORE OUR SERVICES</button>
+        </div>
+      </div>
+      <div class="trust-bar">
+        <span class="trust-item">ACA QUALIFIED</span>
+        <span class="trust-item">ICAEW MEMBER</span>
+        <span class="trust-item">XERO CERTIFIED</span>
+        <span class="trust-item">7+ YEARS EXPERIENCE</span>
+        <span class="trust-item">UK-BASED</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Who We Are -->
+  <div class="section bg-cream">
+    <div class="two-col">
+      <div>
+        <div class="section-eyebrow">WHO WE ARE</div>
+        <div class="section-title">Your financial partner.<br>From <em>foundations</em> to growth.</div>
+        <div class="section-body">Murangi & Co was built with one purpose in mind: to give business owners and individuals better understanding and tools to help them reach their full financial potential.</div>
+        <div class="section-body">We work with SMEs, start-ups, and individuals across the UK, offering bookkeeping, fractional CFO, strategic finance analysis, and more.</div>
+        <div class="section-body">We simplify the financial side of your business so that you can better understand your numbers — and use them to make sharper, more confident decisions.</div>
+      </div>
+      <div class="photo-block">
+        <div class="photo-block-inner navy" style="height:300px;padding:0;">
+          <img class="photo-block-img" src="images/home-feature.jpg" alt="Advisers and clients reviewing financial reports and charts around a table">
+        </div>
+        <div class="photo-block-caption">"Insight · Strategy · Impact"</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Who We Serve -->
+  <div class="section bg-navy">
+    <div style="text-align:center; margin-bottom:40px;">
+      <div class="section-eyebrow">WHO WE SERVE</div>
+      <div class="section-title light">The right support, at the <em>right stage.</em></div>
+    </div>
+    <div class="serve-grid">
+      <div class="serve-card">
+        <div class="serve-num">01</div>
+        <div class="serve-title">For Start-Ups & Early-Stage Businesses</div>
+        <div class="serve-text">Get the financial foundations right from day one. Clean books, proper compliance, Xero set-up, MTD registration, and annual filings — so you can focus on building, not firefighting.</div>
+      </div>
+      <div class="serve-card">
+        <div class="serve-num">02</div>
+        <div class="serve-title">For Growing SMEs</div>
+        <div class="serve-text">Go beyond compliance. Cash flow forecasting, financial modelling, quarterly reviews, and strategic oversight that helps you make decisions with confidence and positions your business for the next level.</div>
+      </div>
+      <div class="serve-card">
+        <div class="serve-num">03</div>
+        <div class="serve-title">For Individuals</div>
+        <div class="serve-text">From self assessment tax returns to full personal financial planning — we help individuals understand their finances, reduce their tax liability, and build a plan that works for them.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- How It Works -->
+  <div class="section bg-white">
+    <div style="text-align:center; margin-bottom:48px;">
+      <div class="section-eyebrow">HOW IT WORKS</div>
+      <div class="section-title" style="text-align:center;">Three steps to <em>financial clarity.</em></div>
+    </div>
+    <div class="steps-grid">
+      <div>
+        <div class="step-num">1</div>
+        <div class="step-title">Book a free consultation</div>
+        <div class="step-text">Tell us about your business or personal situation, the challenges you are facing, and where you want to get to. No obligation, no hard sell — just a focused conversation with a qualified accountant.</div>
+      </div>
+      <div>
+        <div class="step-num">2</div>
+        <div class="step-title">We recommend the right support</div>
+        <div class="step-text">Based on what we learn, we outline the services or package that fits your stage, your goals, and your budget — explained clearly, before you commit to anything.</div>
+      </div>
+      <div>
+        <div class="step-num">3</div>
+        <div class="step-title">We take it from here</div>
+        <div class="step-text">From onboarding and HMRC notifications to ongoing filings and financial oversight — we handle everything. You focus on your business. We keep the financial side sharp.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Our Motto -->
+  <div class="section bg-cream motto-section">
+    <div style="text-align:center; margin-bottom:32px;">
+      <div class="section-eyebrow">OUR MOTTO</div>
+      <div class="section-title" style="text-align:center;">Three words behind <em>everything we do.</em></div>
+    </div>
+    <div class="motto-grid">
+      <div class="motto-card">
+        <div class="motto-num">01</div>
+        <div class="motto-word">Insight<em>.</em></div>
+        <div class="motto-text">Clear books, real analysis, and a genuine understanding of where your business stands.</div>
+      </div>
+      <div class="motto-arrow">→</div>
+      <div class="motto-card">
+        <div class="motto-num">02</div>
+        <div class="motto-word">Strategy<em>.</em></div>
+        <div class="motto-text">A plan built ahead of time — tax, cash flow, and growth thought through, not reacted to.</div>
+      </div>
+      <div class="motto-arrow">→</div>
+      <div class="motto-card">
+        <div class="motto-num">03</div>
+        <div class="motto-word">Impact<em>.</em></div>
+        <div class="motto-text">Advice that shows up in the results: money saved, time back, better decisions made.</div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- CTA -->
+  <div class="cta-section">
+    <div>
+      <div class="cta-title">Ready to simplify your finances and start growing?</div>
+      <div class="cta-sub">Whether you are running a business or managing your personal finances — Murangi & Co has the expertise to help. Book a free, no-obligation 30-minute consultation today.</div>
+      <button class="btn-primary" onclick="showPage('contact')">BOOK YOUR FREE CONSULTATION</button>
+    </div>
+    <div class="cta-photo-block" style="background:none;border:none;padding:0;overflow:hidden;">
+      <img class="cta-photo-img" src="images/cta-consultation.jpg" alt="Taking notes together across a table">
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div>
+      <div class="footer-logo">MURANGI & CO</div>
+      <div class="footer-tagline">FINANCIAL ADVISORY</div>
+      <div class="footer-desc">Chartered Accountants · United Kingdom<br>Simplifying Finances. Empowering Growth.</div>
+    </div>
+    <div>
+      <div class="footer-col-title">NAVIGATION</div>
+      <span class="footer-link" onclick="showPage('home')">Home</span>
+      <span class="footer-link" onclick="showPage('about')">About Us</span>
+      <span class="footer-link" onclick="showPage('services')">Services</span>
+      <span class="footer-link" onclick="showPage('packages')">Packages</span>
+      <span class="footer-link">Get in Touch</span>
+    </div>
+    <div>
+      <div class="footer-col-title">CONTACT</div>
+      <span class="footer-link"><a href="mailto:murangiandco@gmail.com" style="color:inherit;text-decoration:none;">murangiandco@gmail.com</a></span>
+      <span class="footer-link"><a href="tel:+441617265041" style="color:inherit;text-decoration:none;">0161 726 5041</a></span>
+      <span class="footer-link"><a href="https://linkedin.com/company/murangi-co" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">LinkedIn</a></span>
+      <span class="footer-link">Available across the UK</span>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-bottom-text">ACA QUALIFIED · ICAEW MEMBER · XERO CERTIFIED ADVISER · REGISTERED IN ENGLAND AND WALES</span>
+    <span class="footer-bottom-text">© 2025 Murangi & Co. All rights reserved.</span>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════ ABOUT PAGE ══════════════════════════════════════ -->
+<div class="page" id="page-about">
+
+  <!-- Hero -->
+  <div class="about-hero" style="min-height:280px;">
+    <img src="images/about-hero.jpg" alt="Murangi & Co adviser meeting with a client" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 35%;">
+    <div style="position:absolute;inset:0;background:linear-gradient(160deg,rgba(51,58,34,0.82),rgba(35,41,21,0.78));"></div>
+    <div style="position:relative;text-align:center;padding:0 100px;z-index:1;">
+      <div class="section-eyebrow">ABOUT US</div>
+      <div style="font-family:var(--serif);font-size:42px;font-style:italic;color:var(--white);line-height:1.25;margin-bottom:12px;">"The financial partner your business deserves."</div>
+      <div style="color:rgba(255,255,255,0.7);font-size:13px;line-height:1.7;">Murangi & Co is built on the belief that professional financial expertise should be inclusive to all organisations.</div>
+    </div>
+  </div>
+
+  <!-- Our Story -->
+  <div class="section bg-cream">
+    <div class="two-col">
+      <div>
+        <div class="section-eyebrow">OUR STORY</div>
+        <div class="section-title">Built to close <em>the gap.</em></div>
+        <div class="section-body">Too many small businesses and individuals are navigating their finances without the right support. Not because the support does not exist — but because it has historically been designed for larger organisations with bigger budgets and dedicated finance teams.</div>
+        <div class="section-body">The reality for most SMEs and start-ups looks very different. Books that are difficult to interpret. Uncertainty around HMRC compliance. No clear picture of cash flow or financial health.</div>
+        <div class="section-body">Murangi & Co was built to close that gap. We bring the financial expertise, the analytical rigour, and the commercial thinking that growing businesses need — and we make it accessible, practical, and genuinely useful at every stage of the journey.</div>
+      </div>
+      <div class="photo-block">
+        <div class="photo-block-inner navy" style="height:320px;padding:0;">
+          <img class="photo-block-img" src="images/about-feature.jpg" alt="Advisers reviewing a document together over coffee">
+        </div>
+        <div class="photo-block-caption">"ACA Qualified · Big Four Trained · Xero Certified"</div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Behind the Practice — Founder Section -->
+  <section class="founder-section">
+    <div class="founder-header">
+      <div class="founder-eyebrow">BEHIND THE PRACTICE</div>
+      <h2 class="founder-heading">Meet the person behind <em>Murangi &amp; Co.</em></h2>
+    </div>
+
+    <div class="founder-body-wrap">
+      <div class="founder-top">
+        <div class="founder-text">
+          <div class="founder-pullquote">
+            "Bridging the gap between what large corporates have — and what small businesses need."
+          </div>
+
+          <p>Murangi &amp; Co was founded by <strong>Mbajo Murangi</strong>, an ACA-qualified Chartered Accountant and ICAEW member, with over seven years of experience across finance and audit.</p>
+
+          <p>With a passion for and deep understanding of the importance of financial literacy, we know that good accounting is not just about the numbers. It's about strategic financial decisions, understanding compliance, and using laws to your advantage — for savings, for planning, and for the decisions that help a business grow.</p>
+
+          <p>Having worked across Big Four audit engagements with banks, insurance companies, and payments businesses, and having acted as Reporting Accountant on IPO readiness engagements, Mbajo brings both the skills and the expertise to Murangi &amp; Co with the aim of doing one thing: <strong>bridging the gap.</strong></p>
+        </div>
+
+        <div class="founder-photo-col">
+          <img src="images/founder-portrait.jpg" alt="Mbajo Murangi, ACA, founder of Murangi & Co">
+          <div class="founder-caption">
+            <div class="founder-caption-name">Mbajo Murangi</div>
+            <div class="founder-caption-role">ACA · FOUNDER, MURANGI &amp; CO</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="founder-continuation">
+        <p>From that exposure to businesses at scale, one thing becomes clear. There is a real gap between what large corporates have access to — the tools, the expertise, the strategic financial thinking — and what SMEs and smaller businesses can practically get their hands on.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="founder-divider"></div>
+
+  <!-- Experience & Expertise -->
+  <section class="experience-section">
+    <div class="experience-header">
+      <div class="founder-eyebrow">EXPERIENCE &amp; EXPERTISE</div>
+      <h2 class="founder-heading">Built on <em>evidence and expertise.</em></h2>
+    </div>
+
+    <div class="experience-list">
+      <div class="experience-item">
+        <div class="experience-item-title">ACA Chartered Accountant</div>
+        <div class="experience-item-detail">Institute of Chartered Accountants in England and Wales (ICAEW)</div>
+      </div>
+      <div class="experience-item">
+        <div class="experience-item-title">First Class Honours</div>
+        <div class="experience-item-detail">BSc Forensic Accounting, University of South Wales</div>
+      </div>
+      <div class="experience-item">
+        <div class="experience-item-title">Big Four training at KPMG Manchester</div>
+        <div class="experience-item-detail">Audit Associate through to Assistant Manager</div>
+      </div>
+      <div class="experience-item">
+        <div class="experience-item-title">Reporting Accountant on IPO engagements</div>
+        <div class="experience-item-detail">SIR 2000 accountant's reports for prospectus inclusion</div>
+      </div>
+      <div class="experience-item">
+        <div class="experience-item-title">FCA, PRA, and CASS regulatory frameworks</div>
+        <div class="experience-item-detail">Applied across banking, payments, and asset management audits</div>
+      </div>
+      <div class="experience-item">
+        <div class="experience-item-title">FRC Audit Quality Review support</div>
+        <div class="experience-item-detail">Engagements reviewed to the highest standard of audit documentation</div>
+      </div>
+      <div class="experience-item">
+        <div class="experience-item-title">Best Overall Project Award</div>
+        <div class="experience-item-detail">Live project on international fraud for the Development Bank of Wales and Gough Square Chambers Law</div>
+      </div>
+      <div class="experience-item">
+        <div class="experience-item-title">Independent SME practice</div>
+        <div class="experience-item-detail">Statutory accounts, HMRC filings, cash flow projections, and investment-ready financial models</div>
+      </div>
+
+      <div class="experience-signature">
+        <div class="experience-signature-rule"></div>
+        <div>
+          <div class="experience-signature-name">Mbajo Murangi</div>
+          <div class="experience-signature-role">ACA · ICAEW MEMBER · FOUNDER</div>
+        </div>
+        <div class="experience-signature-rule"></div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- The Standard We're Held To (merged: ICAEW + 4 pillars) -->
+  <section class="standard-section">
+    <div class="standard-header">
+      <div class="standard-eyebrow">THE STANDARD WE'RE HELD TO</div>
+      <h2 class="standard-heading">What it means to be <em>ACA qualified.</em></h2>
+      <p class="standard-intro">At Murangi &amp; Co, our ACA-qualified professionals hold themselves to the highest standards set by the Institute of Chartered Accountants in England and Wales.</p>
+    </div>
+
+    <div class="icaew-strip">
+      <div class="icaew-strip-logo">
+        <img src="images/icaew-logo.jpg" alt="ICAEW Chartered Accountant">
+      </div>
+      <div class="icaew-strip-text">
+        The ICAEW is one of the world's leading professional bodies for chartered accountants, recognised as a benchmark of technical excellence, ethical conduct, and financial integrity.
+      </div>
+    </div>
+
+    <div class="pillars-grid">
+      <div class="pillar-card">
+        <div class="pillar-icon-circle">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+        </div>
+        <div class="pillar-title">ACA Qualification</div>
+        <div class="pillar-detail">A qualification built across accounting, audit, assurance, tax, business strategy, and corporate finance, ensuring the knowledge and exposure to advise at every level</div>
+      </div>
+
+      <div class="pillar-card">
+        <div class="pillar-icon-circle">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="1"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/></svg>
+        </div>
+        <div class="pillar-title">Practical Experience</div>
+        <div class="pillar-detail">Big Four experience across banking, insurance, and payments engagements, bringing tested controls, operations, and assessment methods into the work we deliver at Murangi &amp; Co</div>
+      </div>
+
+      <div class="pillar-card">
+        <div class="pillar-icon-circle">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v6c0 5-3.5 7.5-8 8-4.5-.5-8-3-8-8V7z"/><path d="M9 12l2 2 4-4"/></svg>
+        </div>
+        <div class="pillar-title">Ethics &amp; Scepticism</div>
+        <div class="pillar-detail">Bound by the ICAEW Code of Ethics: integrity, objectivity, and independence</div>
+      </div>
+
+      <div class="pillar-card">
+        <div class="pillar-icon-circle">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6M12 22v-6M4.93 4.93l4.24 4.24M14.83 14.83l4.24 4.24M2 12h6M22 12h-6M4.93 19.07l4.24-4.24M14.83 9.17l4.24-4.24"/></svg>
+        </div>
+        <div class="pillar-title">Continuing Development</div>
+        <div class="pillar-detail">An ICAEW requirement to evidence continued development through ongoing training and learning, keeping the methods, systems, and knowledge our clients rely on up to date</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Working With Us -->
+  <div class="section bg-cream">
+    <div class="two-col-wide">
+      <div>
+        <div class="section-eyebrow">WORKING WITH US</div>
+        <div class="section-title">What to <em>expect.</em></div>
+        <div class="section-body">When you work with Murangi & Co, you deal directly with a qualified accountant from the first conversation to the last. We take time to understand your business, your goals, and your challenges — and we build a working relationship that goes beyond the annual accounts.</div>
+        <div class="section-body">We are responsive, transparent about costs, and always available to talk. If something changes in your business or your personal situation, we want to know — because that is exactly when the right financial advice makes the biggest difference.</div>
+        <div class="text-link">→ GET IN TOUCH</div>
+      </div>
+      <div class="photo-block">
+        <div class="photo-block-inner navy" style="height:260px;padding:0;">
+          <img class="photo-block-img" src="images/about-experience.jpg" alt="Colleagues talking through plans together in a bright office">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Our Values (flip cards) -->
+  <div class="section bg-white">
+    <div style="text-align:center;margin-bottom:36px;">
+      <div class="section-eyebrow">OUR VALUES</div>
+      <div class="section-title" style="text-align:center;">What we <em>stand for.</em></div>
+    </div>
+    <div class="values-grid">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-front">
+            <div class="flip-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+            <div class="flip-title">Rigour</div>
+            <div class="flip-hint">hover to read more</div>
+          </div>
+          <div class="flip-back">
+            <div class="flip-back-title">Rigour</div>
+            <div class="flip-back-text">Every figure, every filing, every recommendation — held to the same high professional bar, regardless of engagement size.</div>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-front">
+            <div class="flip-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/><path d="M10.5 9.5a1.5 1.5 0 0 1 3 0c0 .8-1.5 1-1.5 2"/><line x1="12" y1="13" x2="12" y2="13.01"/></svg></div>
+            <div class="flip-title">Clarity</div>
+            <div class="flip-hint">hover to read more</div>
+          </div>
+          <div class="flip-back">
+            <div class="flip-back-title">Clarity</div>
+            <div class="flip-back-text">Plain English, always. We make sure you understand your financial position at every stage. No jargon. No surprises.</div>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-front">
+            <div class="flip-icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="#b8902a" xmlns="http://www.w3.org/2000/svg"><path d="M16.48 10.41c-.39.39-1.04.39-1.43 0l-4.47-4.46-6.7 6.69V14h-2v-2.18c0-.53.21-1.04.59-1.41l6.7-6.7c.78-.78 2.04-.78 2.83 0l4.48 4.47c.39.39.39 1.04 0 1.43L16.48 10.41zM23.62 11.41l-6.7-6.7c-.78-.78-2.05-.78-2.83 0l-.71.71 4.47 4.46c.77.77.77 2.04 0 2.86c-.39.39-.91.59-1.43.59c-.34 0-.67-.08-.97-.25v6.34c0 .55.45 1 1 1H17c.55 0 1-.45 1-1v-5h2v5h2c1.1 0 2-.9 2-2v-4.59C24 12.34 23.79 11.83 23.41 11.41zM15.04 13.31l-4.34-4.35l-6.7 6.7c-.39.39-.39 1.02 0 1.41l3.54 3.54c.39.39 1.02.39 1.41 0L15.04 14.72C15.43 14.33 15.43 13.7 15.04 13.31z"/></svg></div>
+            <div class="flip-title">Commitment</div>
+            <div class="flip-hint">hover to read more</div>
+          </div>
+          <div class="flip-back">
+            <div class="flip-back-title">Commitment</div>
+            <div class="flip-back-text">We are invested in your outcome, not just your invoice. Your success is the measure of whether we have done our job properly.</div>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-front">
+            <div class="flip-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M8 21h8"/><path d="M5 7h14"/><path d="M17 5l2 2"/><path d="M7 5l-2 2"/><path d="M6 7l-3 6a3 3 0 0 0 6 0z"/><path d="M18 7l-3 6a3 3 0 0 0 6 0z"/></svg></div>
+            <div class="flip-title">Integrity</div>
+            <div class="flip-hint">hover to read more</div>
+          </div>
+          <div class="flip-back">
+            <div class="flip-back-title">Integrity</div>
+            <div class="flip-back-text">Honest advice, even when it is not what you want to hear. You will always know where you stand.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flip-note">Hover over each card to reveal the full description · Tap on mobile</div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-section">
+    <div>
+      <div class="cta-title">Ready to simplify your finances and start growing?</div>
+      <div class="cta-sub">Book a free, no-obligation 30-minute consultation with a qualified accountant.</div>
+      <button class="btn-primary" onclick="showPage('contact')">BOOK YOUR FREE CONSULTATION</button>
+    </div>
+    <div class="cta-photo-block" style="background:none;border:none;padding:0;overflow:hidden;">
+      <img class="cta-photo-img" src="images/cta-consultation.jpg" alt="Taking notes together across a table">
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div><div class="footer-logo">MURANGI & CO</div><div class="footer-tagline">FINANCIAL ADVISORY</div><div class="footer-desc">Chartered Accountants · United Kingdom<br>Simplifying Finances. Empowering Growth.</div></div>
+    <div><div class="footer-col-title">NAVIGATION</div><span class="footer-link" onclick="showPage('home')">Home</span><span class="footer-link" onclick="showPage('about')">About Us</span><span class="footer-link" onclick="showPage('services')">Services</span><span class="footer-link" onclick="showPage('packages')">Packages</span></div>
+    <div><div class="footer-col-title">CONTACT</div><span class="footer-link"><a href="mailto:murangiandco@gmail.com" style="color:inherit;text-decoration:none;">murangiandco@gmail.com</a></span><span class="footer-link"><a href="tel:+441617265041" style="color:inherit;text-decoration:none;">0161 726 5041</a></span><span class="footer-link"><a href="https://linkedin.com/company/murangi-co" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">LinkedIn</a></span></div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-bottom-text">ACA QUALIFIED · ICAEW MEMBER · XERO CERTIFIED ADVISER · REGISTERED IN ENGLAND AND WALES</span>
+    <span class="footer-bottom-text">© 2025 Murangi & Co. All rights reserved.</span>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════ SERVICES PAGE ══════════════════════════════════════ -->
+<div class="page" id="page-services">
+
+  <!-- Hero -->
+  <div class="hero" style="min-height:280px;">
+    <div style="width:100%;">
+      <div class="hero-content hero-center">
+        <div class="hero-eyebrow">SERVICES</div>
+        <div class="hero-h1" style="font-size:46px;">Everything you need to <em>move forward.</em></div>
+        <div class="hero-sub">Every service is designed around one question: what does this client actually need to move forward?</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tab Nav -->
+  <div class="tab-nav">
+    <button class="tab-btn active" id="tab-biz" onclick="showTab('biz')">FOR BUSINESSES</button>
+    <button class="tab-btn" id="tab-ind" onclick="showTab('ind')">FOR INDIVIDUALS</button>
+  </div>
+
+  <!-- For Businesses -->
+  <div id="tab-biz-content">
+    <div class="section bg-cream">
+      <div class="section-label-row">
+        <div class="section-label-text">FOR BUSINESSES</div>
+        <div class="section-label-line"></div>
+      </div>
+      <div class="services-grid-2col">
+        <div class="service-card" onclick="showPage('service-bookkeeping')" style="cursor:pointer;">
+          <div class="service-card-body">
+            <div class="service-num">01</div>
+            <div class="service-title">Bookkeeping Automation & Setup</div>
+            <div class="service-text">We configure a cloud-based accounting system — primarily Xero — tailored to your business. Bank feeds, VAT tracking, transaction categorisation, and ongoing oversight to keep everything accurate and audit-ready.</div>
+            <div class="service-quote">Clean, real-time financial data is the foundation everything else is built on. This service also ensures you are fully ready for Making Tax Digital.</div>
+            <div class="text-link" style="margin-top:12px;">→ LEARN MORE</div>
+          </div>
+        </div>
+        <div class="service-card" onclick="showPage('service-filings')" style="cursor:pointer;">
+          <div class="service-card-body">
+            <div class="service-num">02</div>
+            <div class="service-title">Financial Statements & Statutory Filings</div>
+            <div class="service-text">We prepare and submit all required statutory documentation — annual financial statements, Companies House filings, Corporation Tax returns (CT600), and VAT returns. Filed on time, every time.</div>
+            <div class="service-quote">Missing deadlines or submitting incorrect information carries real penalties. A qualified accountant responsible for these filings removes that risk entirely.</div>
+            <div class="text-link" style="margin-top:12px;">→ LEARN MORE</div>
+          </div>
+        </div>
+        <div class="service-card" onclick="showPage('service-mtd')" style="cursor:pointer;">
+          <div class="service-card-body">
+            <div class="service-num">03</div>
+            <div class="service-title">Making Tax Digital Compliance</div>
+            <div class="service-text">MTD requires businesses to maintain digital records and submit tax information through HMRC-compatible software. Compliance thresholds: April 2026 (£50,000), April 2027 (£30,000), April 2028 (£20,000).</div>
+            <div class="service-quote">Most business owners are unaware of where they stand on MTD or what compliance actually requires. The window to act is narrowing. We make it straightforward.</div>
+            <div class="text-link" style="margin-top:12px;">→ LEARN MORE</div>
+          </div>
+        </div>
+        <div class="service-card" onclick="showPage('service-cfo')" style="cursor:pointer;">
+          <div class="service-card-body">
+            <div class="service-num">04</div>
+            <div class="service-title">Fractional CFO & Strategic Finance Advisory</div>
+            <div class="service-text">Senior-level financial thinking on a flexible basis — cash flow management, forward-looking projections, financial modelling, and strategic advice aligned to your current priorities.</div>
+            <div class="service-quote">Most growing businesses cannot justify a full-time Finance Director — but they face exactly the decisions that require that level of expertise. This service bridges that gap.</div>
+            <div class="text-link" style="margin-top:12px;">→ LEARN MORE</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- For Individuals -->
+  <div id="tab-ind-content" style="display:none;">
+    <div class="section bg-navy">
+      <div class="section-label-row">
+        <div class="section-label-text" style="color:rgba(184,144,42,0.9);">FOR INDIVIDUALS</div>
+        <div class="section-label-line" style="background:rgba(255,255,255,0.12);"></div>
+      </div>
+      <div class="ind-grid-3col">
+        <div class="ind-service-card" onclick="showPage('service-personal-tax')" style="cursor:pointer;">
+          <div class="ind-service-body">
+            <div class="ind-service-num">01</div>
+            <div class="ind-service-title">Personal Tax Returns & Planning</div>
+            <div class="ind-service-text">We prepare and submit your SA100 to HMRC, filed ahead of your deadline — and proactively review your position to legally reduce what you pay: pension contributions, ISA allowances, reliefs, and the timing of income or asset disposals.</div>
+            <div class="text-link" style="margin-top:12px;">→ LEARN MORE</div>
+          </div>
+        </div>
+        <div class="ind-service-card" onclick="showPage('service-financial-planning')" style="cursor:pointer;">
+          <div class="ind-service-body">
+            <div class="ind-service-num">02</div>
+            <div class="ind-service-title">Personal Financial Planning & Budgeting</div>
+            <div class="ind-service-text">One-to-one financial planning for individuals who want a clearer picture of their finances and a realistic plan — whether that is property, debt, investment, or long-term financial security.</div>
+            <div class="text-link" style="margin-top:12px;">→ LEARN MORE</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <!-- CTA -->
+  <div class="cta-section">
+    <div>
+      <div class="cta-title">Not sure which service is right for you?</div>
+      <div class="cta-sub">Book a free 30-minute consultation and we will talk it through together — no obligation, no hard sell. Just an honest conversation about what you actually need.</div>
+      <button class="btn-primary" onclick="showPage('contact')">BOOK YOUR FREE CONSULTATION</button>
+    </div>
+    <div class="cta-photo-block" style="background:none;border:none;padding:0;overflow:hidden;">
+      <img class="cta-photo-img" src="images/cta-consultation.jpg" alt="Taking notes together across a table">
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div><div class="footer-logo">MURANGI & CO</div><div class="footer-tagline">FINANCIAL ADVISORY</div><div class="footer-desc">Chartered Accountants · United Kingdom<br>Simplifying Finances. Empowering Growth.</div></div>
+    <div><div class="footer-col-title">NAVIGATION</div><span class="footer-link" onclick="showPage('home')">Home</span><span class="footer-link" onclick="showPage('about')">About Us</span><span class="footer-link" onclick="showPage('services')">Services</span><span class="footer-link" onclick="showPage('packages')">Packages</span></div>
+    <div><div class="footer-col-title">CONTACT</div><span class="footer-link"><a href="mailto:murangiandco@gmail.com" style="color:inherit;text-decoration:none;">murangiandco@gmail.com</a></span><span class="footer-link"><a href="tel:+441617265041" style="color:inherit;text-decoration:none;">0161 726 5041</a></span><span class="footer-link"><a href="https://linkedin.com/company/murangi-co" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">LinkedIn</a></span></div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-bottom-text">ACA QUALIFIED · ICAEW MEMBER · XERO CERTIFIED ADVISER · REGISTERED IN ENGLAND AND WALES</span>
+    <span class="footer-bottom-text">© 2025 Murangi & Co. All rights reserved.</span>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════ SERVICE: BOOKKEEPING ══════════════════════════════════════ -->
+<div class="page" id="page-service-bookkeeping">
+
+  <!-- Hero -->
+  <div class="svc-hero">
+    <div class="svc-hero-photo">
+      <img class="svc-hero-img" src="images/service-bookkeeping-hero.jpg" alt="Bookkeeping in progress on a laptop with notebook and pen">
+    </div>
+    <div class="svc-hero-gradient"></div>
+    <div style="width:100%;">
+      <div class="svc-hero-content">
+        <div class="svc-hero-crumb">
+          <span class="svc-hero-crumb-link" onclick="showPage('services')">SERVICES</span>
+          <span class="svc-hero-crumb-sep">/</span>
+          <span>FOR BUSINESSES</span>
+        </div>
+        <div class="svc-hero-h1">Bookkeeping, Automation<br>&amp; <em>Setup.</em></div>
+        <div class="svc-hero-tag">Clean books. Clear picture. A business that runs on real numbers.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Problem -->
+  <div class="section bg-cream">
+    <div class="two-col-wide" style="grid-template-columns:1fr;max-width:820px;margin:0 auto;">
+      <div class="svc-problem-prose">
+        <div class="section-eyebrow">THE PROBLEM</div>
+        <div class="section-body">Most business owners start out doing what makes sense — tracking income and expenses in a spreadsheet, saving receipts in a folder, or handing a box of documents to an accountant once a year.</div>
+        <div class="section-body">For a while, it works. Then the business grows, transactions multiply, and what started as a manageable system quietly becomes a liability.</div>
+        <div class="section-body">Without clean, up-to-date books, you cannot understand your profitability, plan for tax, or approach a lender with confidence. You do not know whether the business is actually profitable until months after the fact. Tax bills arrive as shocks rather than planned expenses. When it comes to applying for a loan or bringing in investment, disorganised records signal risk and close doors.</div>
+        <div class="section-body">The root cause is almost always the same: the business never had a proper financial system set up in the first place. This service fixes that — properly, sustainably, and in a way that puts the business owner back in control.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- What We Offer -->
+  <div class="section bg-white">
+    <div style="text-align:center; margin-bottom:48px;">
+      <div class="section-eyebrow">WHAT WE OFFER</div>
+      <div class="section-title">Everything you need, <em>set up properly.</em></div>
+    </div>
+    <div class="svc-offer-list">
+
+      <div class="svc-offer-item">
+        <div class="svc-offer-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+        </div>
+        <div>
+          <div class="svc-offer-title">End-to-End Xero Setup</div>
+          <div class="svc-offer-text">We configure your Xero accounting system from the ground up, tailored specifically to your business — not a generic template. A <strong>chart of accounts</strong> structured to reflect how your business actually operates. <strong>Bank feeds</strong> connected so transactions flow in real time. <strong>VAT configuration</strong> aligned to your scheme — standard, flat rate, cash accounting, or annual. <strong>Invoice and payment templates</strong> branded and set up. <strong>Automated categorisation rules</strong> built around your specific income streams and expense patterns.</div>
+        </div>
+      </div>
+
+      <div class="svc-offer-item">
+        <div class="svc-offer-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 4 6-6"/></svg>
+        </div>
+        <div>
+          <div class="svc-offer-title">Cleanup &amp; Migration</div>
+          <div class="svc-offer-text">If your books are currently in a spreadsheet, another platform, or simply a mess, we handle the migration and cleanup before the new system goes live. There is no point building on a shaky foundation — so we ensure the numbers going into Xero are accurate, complete, and reconciled before anything is handed over.</div>
+        </div>
+      </div>
+
+      <div class="svc-offer-item">
+        <div class="svc-offer-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+        <div>
+          <div class="svc-offer-title">Ongoing Oversight</div>
+          <div class="svc-offer-text">Once your system is live, we provide ongoing oversight to keep it accurate — reviewing transactions, catching miscategorisations, flagging anomalies, and ensuring your financial reports are always reliable. This is not about doing your bookkeeping for you indefinitely. It is about making sure the system works and the records remain trustworthy.</div>
+        </div>
+      </div>
+
+      <div class="svc-offer-item">
+        <div class="svc-offer-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18" stroke-width="2"/></svg>
+        </div>
+        <div>
+          <div class="svc-offer-title">Making Tax Digital Readiness</div>
+          <div class="svc-offer-text">Xero is fully MTD-compatible. By setting your business up on Xero now, you are not just solving today's bookkeeping problem — you are also ensuring that when Making Tax Digital obligations apply to your business, you are already compliant. No scramble. No last-minute changes. No penalties.</div>
+        </div>
+      </div>
+
+      <div class="svc-offer-item">
+        <div class="svc-offer-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 11l-2 2-2-2"/></svg>
+        </div>
+        <div>
+          <div class="svc-offer-title">Training &amp; Handover</div>
+          <div class="svc-offer-text">Every setup includes a structured training session so you — and any relevant team members — know how to use the system confidently. We cover how to record income and expenses correctly, how to reconcile your bank account, how to read your Profit &amp; Loss and Balance Sheet, and what to do when something does not look right. The goal is not dependency. The goal is that you understand your own finances and operate with confidence.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  
+  <!-- Punchy callouts (replaces photo strip) -->
+  <div class="svc-callouts">
+    <div class="svc-callout">
+      <div class="svc-callout-text">Powered by <em>Xero.</em></div>
+    </div>
+    <div class="svc-callout">
+      <div class="svc-callout-text">Client Advisory &amp; <em>Training.</em></div>
+      <div class="svc-callout-sub">Not just automation — hands-on skills so you own your numbers.</div>
+    </div>
+    <div class="svc-callout">
+      <div class="svc-callout-text">Clean <em>Reporting.</em></div>
+    </div>
+  </div>
+
+  <!-- What You Get Out of It — outcomes on navy -->
+  <div class="svc-outcomes-wrap">
+    <div class="svc-outcomes-head">
+      <div class="section-eyebrow">WHAT YOU GET OUT OF IT</div>
+      <div class="section-title light">A foundation you can <em>build on.</em></div>
+    </div>
+    <div class="svc-outcomes-grid">
+
+      <div class="svc-outcome">
+        <div class="svc-outcome-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="svc-outcome-text">A fully configured, live Xero system tailored to your operations</div>
+      </div>
+
+      <div class="svc-outcome">
+        <div class="svc-outcome-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="svc-outcome-text">Clean, reconciled financial records you can rely on</div>
+      </div>
+
+      <div class="svc-outcome">
+        <div class="svc-outcome-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="svc-outcome-text">Real-time visibility into income, expenditure, and cash position</div>
+      </div>
+
+      <div class="svc-outcome">
+        <div class="svc-outcome-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="svc-outcome-text">VAT setup that works correctly and automatically</div>
+      </div>
+
+      <div class="svc-outcome">
+        <div class="svc-outcome-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="svc-outcome-text">MTD-compliant digital records already in place</div>
+      </div>
+
+      <div class="svc-outcome">
+        <div class="svc-outcome-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="svc-outcome-text">The knowledge and confidence to manage your books day to day</div>
+      </div>
+
+      <div class="svc-outcome">
+        <div class="svc-outcome-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="svc-outcome-text">A qualified professional reviewing your records on an ongoing basis</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Why This Matters callout -->
+  <div class="section bg-white">
+    <div class="svc-why">
+      <div class="svc-why-label">WHY THIS MATTERS</div>
+      <div class="svc-why-text">Without clean, up-to-date books, every other financial decision is made in the dark. Getting this right from the start — or cleaning it up early — saves significant time and cost down the line. It is the foundation everything else is built on.</div>
+    </div>
+  </div>
+
+  <!-- Who This Is For -->
+  <div class="section bg-cream">
+    <div style="text-align:center; margin-bottom:36px;">
+      <div class="section-eyebrow">WHO THIS IS FOR</div>
+      <div class="section-title">Built for businesses at <em>every stage.</em></div>
+    </div>
+    <div class="svc-who-grid">
+      <div class="svc-who-item">
+        <div class="svc-who-marker"></div>
+        <div class="svc-who-text">New businesses that want to get their finances set up correctly from the start</div>
+      </div>
+      <div class="svc-who-item">
+        <div class="svc-who-marker"></div>
+        <div class="svc-who-text">Growing businesses that have outgrown spreadsheets and need a proper system</div>
+      </div>
+      <div class="svc-who-item">
+        <div class="svc-who-marker"></div>
+        <div class="svc-who-text">Business owners taking over from a previous bookkeeper and finding records in poor shape</div>
+      </div>
+      <div class="svc-who-item">
+        <div class="svc-who-marker"></div>
+        <div class="svc-who-text">Businesses preparing for their first VAT registration</div>
+      </div>
+      <div class="svc-who-item">
+        <div class="svc-who-marker"></div>
+        <div class="svc-who-text">Anyone approaching a funding round, loan application, or investor conversation who needs clean, credible financials</div>
+      </div>
+    </div>
+
+    <div class="svc-availability">Available as part of the <span onclick="showPage('packages')">Foundation, Growth, and Strategic packages</span>, or as a standalone engagement.</div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-section">
+    <div>
+      <div class="cta-title">Ready to get your books on the right footing?</div>
+      <div class="cta-sub">Book a free 30-minute introductory call. We will talk through where you are, what you need, and whether this service is the right fit — no obligation, no hard sell.</div>
+      <button class="btn-primary" onclick="showPage('contact')">BOOK A FREE INTRODUCTORY CALL</button>
+    </div>
+    <div class="cta-photo-block" style="background:none;border:none;padding:0;overflow:hidden;">
+      <img class="cta-photo-img" src="images/cta-consultation.jpg" alt="Taking notes together across a table">
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div><div class="footer-logo">MURANGI & CO</div><div class="footer-tagline">FINANCIAL ADVISORY</div><div class="footer-desc">Chartered Accountants · United Kingdom<br>Simplifying Finances. Empowering Growth.</div></div>
+    <div><div class="footer-col-title">NAVIGATION</div><span class="footer-link" onclick="showPage('home')">Home</span><span class="footer-link" onclick="showPage('about')">About Us</span><span class="footer-link" onclick="showPage('services')">Services</span><span class="footer-link" onclick="showPage('packages')">Packages</span></div>
+    <div><div class="footer-col-title">CONTACT</div><span class="footer-link"><a href="mailto:murangiandco@gmail.com" style="color:inherit;text-decoration:none;">murangiandco@gmail.com</a></span><span class="footer-link"><a href="tel:+441617265041" style="color:inherit;text-decoration:none;">0161 726 5041</a></span><span class="footer-link"><a href="https://linkedin.com/company/murangi-co" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">LinkedIn</a></span></div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-bottom-text">ACA QUALIFIED · ICAEW MEMBER · XERO CERTIFIED ADVISER · REGISTERED IN ENGLAND AND WALES</span>
+    <span class="footer-bottom-text">© 2025 Murangi & Co. All rights reserved.</span>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════ SERVICE: FILINGS ══════════════════════════════════════ -->
+<div class="page" id="page-service-filings">
+
+  <!-- Hero -->
+  <div class="svc-hero">
+    <div class="svc-hero-photo">
+      <img class="svc-hero-img" src="images/service-filings-hero.jpg" alt="Reviewing financial statements alongside a reporting dashboard">
+    </div>
+    <div class="svc-hero-gradient"></div>
+    <div style="width:100%;">
+      <div class="svc-hero-content">
+        <div class="svc-hero-crumb">
+          <span class="svc-hero-crumb-link" onclick="showPage('services')">SERVICES</span>
+          <span class="svc-hero-crumb-sep">/</span>
+          <span>FOR BUSINESSES</span>
+        </div>
+        <div class="svc-hero-h1">Financial Statements<br>&amp; <em>Statutory Filings.</em></div>
+        <div class="svc-hero-tag">Every deadline met. Every filing done right. Your business protected.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Problem -->
+  <div class="section bg-cream">
+    <div class="two-col-wide" style="grid-template-columns:1fr;max-width:820px;margin:0 auto;">
+      <div class="svc-problem-prose">
+        <div class="section-eyebrow">THE PROBLEM</div>
+        <div class="section-body">Statutory filing is the part of running a business that most owners dread — and for good reason. The deadlines are multiple, the requirements overlap, and the consequences of getting it wrong are real. Companies House and HMRC operate on different filing calendars, and many business owners are unaware that their accounts filing deadline and their Corporation Tax deadline are not the same date — each carrying its own penalty regime.</div>
+        <div class="section-body">Accounts prepared without proper accounting knowledge often contain errors — misclassified expenses, incorrect depreciation, missing disclosures — that can cause problems with HMRC or misrepresent the financial position of the business. VAT returns filed incorrectly can result in investigations, penalties, and unexpected bills. And when statutory accounts do not accurately reflect the business&#x2019;s financial position, lenders, investors, and potential partners are making decisions based on wrong information.</div>
+        <div class="section-body">Late filing penalties with Companies House start small but escalate quickly. HMRC late filing and payment penalties can become significant, particularly when interest compounds over time. With a qualified professional handling these obligations, it simply does not happen.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- What We Offer -->
+  <div class="section bg-white">
+    <div style="text-align:center; margin-bottom:48px;">
+      <div class="section-eyebrow">WHAT WE OFFER</div>
+      <div class="section-title">Everything you need, <em>filed on time.</em></div>
+    </div>
+    <div class="svc-offer-list">
+
+      <div class="svc-offer-item">
+        <div class="svc-offer-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        </div>
+        <div>
+          <div class="svc-offer-title">Annual Financial Statements</div>
+          <div class="svc-offer-text">We prepare your statutory financial statements in accordance with applicable accounting standards — for most small companies, that means <strong>FRS 102 Section 1A</strong> or <strong>FRS 105</strong> for micro-entities. This includes the Profit and Loss Account, Balance Sheet, notes to the accounts where required, and the Directors&#x2019; report where applicable. Accounts are prepared from your underlying records, reviewed for accuracy and completeness, and formatted for both Companies House submission and your own management use.</div>
+        </div>
+      </div>
+
+      <div class="svc-offer-item">
+        <div class="svc-offer-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="9" y1="9" x2="9" y2="9.01"/><line x1="15" y1="9" x2="15" y2="9.01"/><line x1="9" y1="15" x2="9" y2="15.01"/><line x1="15" y1="15" x2="15" y2="15.01"/></svg>
+        </div>
+        <div>
+          <div class="svc-offer-title">Companies House Filings</div>
+          <div class="svc-offer-text">We handle the preparation and submission of your annual accounts to Companies House, as well as your <strong>confirmation statement</strong> — the annual filing that confirms your company&#x2019;s registered details are accurate and up to date. Both are submitted on time, every time.</div>
+        </div>
+      </div>
+
+      <div class="svc-offer-item">
+        <div class="svc-offer-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="10" y2="10"/><line x1="12" y1="10" x2="14" y2="10"/><line x1="8" y1="14" x2="10" y2="14"/><line x1="12" y1="14" x2="14" y2="14"/></svg>
+        </div>
+        <div>
+          <div class="svc-offer-title">Corporation Tax Return (CT600)</div>
+          <div class="svc-offer-text">We prepare and submit your Corporation Tax return to HMRC, including computation of taxable profits, identification of all allowable deductions and reliefs, and calculation of the tax liability due. Any <strong>capital allowances</strong> your business is entitled to are correctly claimed.</div>
+        </div>
+      </div>
+
+      <div class="svc-offer-item">
+        <div class="svc-offer-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16l3-2 2 2 2-2 2 2 2-2 3 2V4a2 2 0 0 0-2-2z"/><line x1="8" y1="9" x2="16" y2="9"/><line x1="8" y1="13" x2="14" y2="13"/></svg>
+        </div>
+        <div>
+          <div class="svc-offer-title">VAT Returns</div>
+          <div class="svc-offer-text">Where applicable, we prepare and submit your VAT returns on a quarterly or monthly basis, ensuring input and output tax is correctly calculated and that all returns are filed through MTD-compatible software in line with HMRC requirements.</div>
+        </div>
+      </div>
+
+      <div class="svc-offer-item">
+        <div class="svc-offer-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        </div>
+        <div>
+          <div class="svc-offer-title">Deadline Management</div>
+          <div class="svc-offer-text">We track all relevant filing and payment deadlines on your behalf and communicate them to you well in advance — so nothing is ever a surprise, and nothing is ever late.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  
+  <!-- Punchy callouts (replaces photo strip) -->
+  <div class="svc-callouts">
+    <div class="svc-callout">
+      <div class="svc-callout-text">We speak <em>HMRC,</em> so you don't have to.</div>
+    </div>
+    <div class="svc-callout">
+      <div class="svc-callout-text">A second pair of <em>expert eyes,</em> every time.</div>
+    </div>
+    <div class="svc-callout">
+      <div class="svc-callout-text">Filed right. Filed on time. <em>Every time.</em></div>
+    </div>
+  </div>
+
+  <!-- What You Get Out of It — outcomes on navy -->
+  <div class="svc-outcomes-wrap">
+    <div class="svc-outcomes-head">
+      <div class="section-eyebrow">WHAT YOU GET OUT OF IT</div>
+      <div class="section-title light">A foundation you can <em>stand on.</em></div>
+    </div>
+    <div class="svc-outcomes-grid">
+
+      <div class="svc-outcome">
+        <div class="svc-outcome-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="svc-outcome-text">Every statutory obligation met, on time and correctly</div>
+      </div>
+
+      <div class="svc-outcome">
+        <div class="svc-outcome-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="svc-outcome-text">Financial statements that accurately reflect the position of your business</div>
+      </div>
+
+      <div class="svc-outcome">
+        <div class="svc-outcome-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="svc-outcome-text">Corporation Tax computed correctly, with all available reliefs claimed</div>
+      </div>
+
+      <div class="svc-outcome">
+        <div class="svc-outcome-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="svc-outcome-text">VAT returns filed accurately and on time</div>
+      </div>
+
+      <div class="svc-outcome">
+        <div class="svc-outcome-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="svc-outcome-text">Complete peace of mind with Companies House and HMRC</div>
+      </div>
+
+      <div class="svc-outcome">
+        <div class="svc-outcome-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="svc-outcome-text">Accounts you can confidently share with lenders, investors, or partners</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Why This Matters callout -->
+  <div class="section bg-white">
+    <div class="svc-why">
+      <div class="svc-why-label">WHY THIS MATTERS</div>
+      <div class="svc-why-text">Beyond compliance, accurately prepared statutory accounts are essential when approaching lenders, investors, or potential business partners. They are not just a legal requirement — they are a signal of how seriously the business is being run.</div>
+    </div>
+  </div>
+
+  <!-- Who This Is For -->
+  <div class="section bg-cream">
+    <div style="text-align:center; margin-bottom:36px;">
+      <div class="section-eyebrow">WHO THIS IS FOR</div>
+      <div class="section-title">Built for <em>every limited company.</em></div>
+    </div>
+    <div class="svc-who-grid">
+      <div class="svc-who-item">
+        <div class="svc-who-marker"></div>
+        <div class="svc-who-text">Limited companies with annual filing obligations to Companies House and HMRC</div>
+      </div>
+      <div class="svc-who-item">
+        <div class="svc-who-marker"></div>
+        <div class="svc-who-text">Businesses approaching their first year-end who want accounts prepared properly from the start</div>
+      </div>
+      <div class="svc-who-item">
+        <div class="svc-who-marker"></div>
+        <div class="svc-who-text">Business owners who have been managing filings themselves and want to hand this over</div>
+      </div>
+      <div class="svc-who-item">
+        <div class="svc-who-marker"></div>
+        <div class="svc-who-text">Businesses that have received correspondence from HMRC or Companies House and need to get back into good standing</div>
+      </div>
+      <div class="svc-who-item">
+        <div class="svc-who-marker"></div>
+        <div class="svc-who-text">Any business seeking finance or investment where clean, accurate statutory accounts are a prerequisite</div>
+      </div>
+    </div>
+
+    <div class="svc-availability">Available as part of the <span onclick="showPage('packages')">Foundation, Growth, and Strategic packages, or as a standalone engagement</span>.</div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-section">
+    <div>
+      <div class="cta-title">Need your filings handled properly?</div>
+      <div class="cta-sub">Book a free 30-minute call. We&#x2019;ll review where you are with Companies House and HMRC, and outline what proper handling of your filings looks like — no obligation, no hard sell.</div>
+      <button class="btn-primary" onclick="showPage('contact')">BOOK A FREE INTRODUCTORY CALL</button>
+    </div>
+    <div class="cta-photo-block" style="background:none;border:none;padding:0;overflow:hidden;">
+      <img class="cta-photo-img" src="images/cta-consultation.jpg" alt="Taking notes together across a table">
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div><div class="footer-logo">MURANGI & CO</div><div class="footer-tagline">FINANCIAL ADVISORY</div><div class="footer-desc">Chartered Accountants · United Kingdom<br>Simplifying Finances. Empowering Growth.</div></div>
+    <div><div class="footer-col-title">NAVIGATION</div><span class="footer-link" onclick="showPage('home')">Home</span><span class="footer-link" onclick="showPage('about')">About Us</span><span class="footer-link" onclick="showPage('services')">Services</span><span class="footer-link" onclick="showPage('packages')">Packages</span></div>
+    <div><div class="footer-col-title">CONTACT</div><span class="footer-link"><a href="mailto:murangiandco@gmail.com" style="color:inherit;text-decoration:none;">murangiandco@gmail.com</a></span><span class="footer-link"><a href="tel:+441617265041" style="color:inherit;text-decoration:none;">0161 726 5041</a></span><span class="footer-link"><a href="https://linkedin.com/company/murangi-co" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">LinkedIn</a></span></div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-bottom-text">ACA QUALIFIED · ICAEW MEMBER · XERO CERTIFIED ADVISER · REGISTERED IN ENGLAND AND WALES</span>
+    <span class="footer-bottom-text">© 2025 Murangi & Co. All rights reserved.</span>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════ SERVICE: MTD ══════════════════════════════════════ -->
+<div class="page" id="page-service-mtd">
+
+  <!-- Hero -->
+  <div class="svc-hero">
+    <div class="svc-hero-photo">
+      <img class="svc-hero-img" src="images/service-mtd-hero.jpg" alt="Digital tax and compliance icons over a laptop keyboard">
+    </div>
+    <div class="svc-hero-gradient"></div>
+    <div style="width:100%;">
+      <div class="svc-hero-content">
+        <div class="svc-hero-crumb">
+          <span class="svc-hero-crumb-link" onclick="showPage('services')">SERVICES</span>
+          <span class="svc-hero-crumb-sep">/</span>
+          <span>FOR BUSINESSES</span>
+        </div>
+        <div class="svc-hero-h1">Making Tax Digital<br>&amp; <em>Compliance.</em></div>
+        <div class="svc-hero-tag">The deadline is closer than you think. Get ahead of it now.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Problem -->
+  <div class="section bg-cream">
+    <div class="two-col-wide" style="grid-template-columns:1fr;max-width:820px;margin:0 auto;">
+      <div class="svc-problem-prose">
+        <div class="section-eyebrow">THE PROBLEM</div>
+        <div class="section-body">Making Tax Digital is one of the most significant changes to the UK tax system in a generation — and the majority of small business owners are either unaware of what it requires, unclear on when it applies to them, or assuming it is someone else&#x2019;s problem to solve.</div>
+        <div class="section-body">The timeline is moving fast. MTD for Income Tax applies from <strong>April 2026 to sole traders and landlords with income above £50,000</strong>. The threshold drops to £30,000 in April 2027 and £20,000 in April 2028. Many people affected by the 2026 deadline do not yet know it applies to them.</div>
+        <div class="section-body">Businesses using spreadsheets, manual records, or older accounting software do not meet HMRC&#x2019;s MTD requirements and will need to change. Businesses already filing VAT returns digitally sometimes assume they are fully MTD compliant — they are not. MTD for Income Tax is a separate and more extensive requirement. And even businesses using Xero still need to be formally registered for MTD; compatibility and registration are not the same thing.</div>
+        <div class="section-body">HMRC&#x2019;s points-based penalty system means missed or late quarterly submissions will accumulate penalty points, eventually triggering financial penalties. The businesses that manage this transition smoothly are the ones that act before the deadline — not at it.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- What We Offer -->
+  <div class="section bg-white">
+    <div style="text-align:center; margin-bottom:48px;">
+      <div class="section-eyebrow">WHAT WE OFFER</div>
+      <div class="section-title">Everything you need, <em>end-to-end.</em></div>
+    </div>
+    <div class="svc-offer-list">
+
+      <div class="svc-offer-item">
+        <div class="svc-offer-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </div>
+        <div>
+          <div class="svc-offer-title">MTD Readiness Assessment</div>
+          <div class="svc-offer-text">We start with a clear assessment of where your business currently stands in relation to MTD requirements — what applies to you, when, and what needs to change. This removes the confusion and gives you a straightforward picture of what needs to happen.</div>
+        </div>
+      </div>
+
+      <div class="svc-offer-item">
+        <div class="svc-offer-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+        </div>
+        <div>
+          <div class="svc-offer-title">Digital Records Setup</div>
+          <div class="svc-offer-text">If your business is not yet maintaining digital records in an MTD-compatible format, we set that up through <strong>Xero</strong>, which is fully compatible with HMRC&#x2019;s requirements. Your records will be structured, categorised, and maintained in a way that satisfies MTD obligations from day one.</div>
+        </div>
+      </div>
+
+      <div class="svc-offer-item">
+        <div class="svc-offer-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div>
+          <div class="svc-offer-title">HMRC Registration</div>
+          <div class="svc-offer-text">We handle your formal MTD registration with HMRC, ensuring your business is correctly enrolled and that your software is properly linked to your tax account. This is a step many businesses miss — and a necessary one.</div>
+        </div>
+      </div>
+
+      <div class="svc-offer-item">
+        <div class="svc-offer-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        </div>
+        <div>
+          <div class="svc-offer-title">Quarterly Submission Management</div>
+          <div class="svc-offer-text">Under MTD for Income Tax, businesses are required to submit quarterly updates to HMRC summarising income and expenses. We manage these submissions on your behalf — accurately, on time, and through compliant software — so the quarterly obligation becomes a routine part of your financial calendar rather than a source of stress.</div>
+        </div>
+      </div>
+
+      <div class="svc-offer-item">
+        <div class="svc-offer-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        </div>
+        <div>
+          <div class="svc-offer-title">End of Period Statement &amp; Final Declaration</div>
+          <div class="svc-offer-text">At the end of each tax year, MTD requires an End of Period Statement and a Final Declaration to be submitted to HMRC. We prepare and submit both, incorporating any year-end adjustments and ensuring your tax position is accurately reported.</div>
+        </div>
+      </div>
+
+      <div class="svc-offer-item">
+        <div class="svc-offer-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="4.93" y1="4.93" x2="9.17" y2="9.17"/><line x1="14.83" y1="14.83" x2="19.07" y2="19.07"/></svg>
+        </div>
+        <div>
+          <div class="svc-offer-title">Ongoing Compliance Monitoring</div>
+          <div class="svc-offer-text">MTD requirements are still evolving. We monitor developments and ensure your business remains compliant as the rules are refined — so you are never caught out by a change you were not aware of.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  
+  <!-- Punchy callouts (replaces photo strip) -->
+  <div class="svc-callouts">
+    <div class="svc-callout">
+      <div class="svc-callout-text">Digital filing, done right, <em>first time.</em></div>
+    </div>
+    <div class="svc-callout">
+      <div class="svc-callout-text">MTD-ready with Xero, built in from <em>day one.</em></div>
+    </div>
+    <div class="svc-callout">
+      <div class="svc-callout-text">Stay compliant. Stay <em>stress-free.</em></div>
+    </div>
+  </div>
+
+  <!-- What You Get Out of It — outcomes on navy -->
+  <div class="svc-outcomes-wrap">
+    <div class="svc-outcomes-head">
+      <div class="section-eyebrow">WHAT YOU GET OUT OF IT</div>
+      <div class="section-title light">A foundation you can <em>get ahead.</em></div>
+    </div>
+    <div class="svc-outcomes-grid">
+
+      <div class="svc-outcome">
+        <div class="svc-outcome-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="svc-outcome-text">Full clarity on what MTD requires of your business and when</div>
+      </div>
+
+      <div class="svc-outcome">
+        <div class="svc-outcome-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="svc-outcome-text">Digital records maintained in an HMRC-compatible format</div>
+      </div>
+
+      <div class="svc-outcome">
+        <div class="svc-outcome-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="svc-outcome-text">Formal MTD registration completed correctly</div>
+      </div>
+
+      <div class="svc-outcome">
+        <div class="svc-outcome-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="svc-outcome-text">Quarterly submissions managed on your behalf</div>
+      </div>
+
+      <div class="svc-outcome">
+        <div class="svc-outcome-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="svc-outcome-text">Year-end statements prepared and filed accurately</div>
+      </div>
+
+      <div class="svc-outcome">
+        <div class="svc-outcome-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="svc-outcome-text">No penalties, no scramble, no last-minute system overhauls</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Why This Matters callout -->
+  <div class="section bg-white">
+    <div class="svc-why">
+      <div class="svc-why-label">WHY THIS MATTERS</div>
+      <div class="svc-why-text">For businesses already using Xero, a significant portion of the groundwork is already in place — but formal registration and correct quarterly filing still need to happen. For those not yet using digital tools, the window to get ready is narrowing. Acting now means building the good financial habits that support the wider operation of the business.</div>
+    </div>
+  </div>
+
+  <!-- Who This Is For -->
+  <div class="section bg-cream">
+    <div style="text-align:center; margin-bottom:36px;">
+      <div class="section-eyebrow">WHO THIS IS FOR</div>
+      <div class="section-title">Built for <em>anyone facing the deadline.</em></div>
+    </div>
+    <div class="svc-who-grid">
+      <div class="svc-who-item">
+        <div class="svc-who-marker"></div>
+        <div class="svc-who-text">Sole traders and landlords with income approaching or above £50,000</div>
+      </div>
+      <div class="svc-who-item">
+        <div class="svc-who-marker"></div>
+        <div class="svc-who-text">Businesses still using spreadsheets or manual records that need to transition to digital systems</div>
+      </div>
+      <div class="svc-who-item">
+        <div class="svc-who-marker"></div>
+        <div class="svc-who-text">Xero users who are not yet formally registered for MTD</div>
+      </div>
+      <div class="svc-who-item">
+        <div class="svc-who-marker"></div>
+        <div class="svc-who-text">Any business owner who wants to get this resolved properly before it becomes urgent</div>
+      </div>
+    </div>
+
+    <div class="svc-availability">Available as part of the <span onclick="showPage('packages')">Foundation, Growth, and Strategic packages, or as a standalone engagement</span>.</div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-section">
+    <div>
+      <div class="cta-title">Ready before the deadline?</div>
+      <div class="cta-sub">Book a free 30-minute call. We&#x2019;ll assess where you stand on MTD, what applies to you, and what needs to happen — well ahead of any HMRC deadline.</div>
+      <button class="btn-primary" onclick="showPage('contact')">BOOK A FREE INTRODUCTORY CALL</button>
+    </div>
+    <div class="cta-photo-block" style="background:none;border:none;padding:0;overflow:hidden;">
+      <img class="cta-photo-img" src="images/cta-consultation.jpg" alt="Taking notes together across a table">
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div><div class="footer-logo">MURANGI & CO</div><div class="footer-tagline">FINANCIAL ADVISORY</div><div class="footer-desc">Chartered Accountants · United Kingdom<br>Simplifying Finances. Empowering Growth.</div></div>
+    <div><div class="footer-col-title">NAVIGATION</div><span class="footer-link" onclick="showPage('home')">Home</span><span class="footer-link" onclick="showPage('about')">About Us</span><span class="footer-link" onclick="showPage('services')">Services</span><span class="footer-link" onclick="showPage('packages')">Packages</span></div>
+    <div><div class="footer-col-title">CONTACT</div><span class="footer-link"><a href="mailto:murangiandco@gmail.com" style="color:inherit;text-decoration:none;">murangiandco@gmail.com</a></span><span class="footer-link"><a href="tel:+441617265041" style="color:inherit;text-decoration:none;">0161 726 5041</a></span><span class="footer-link"><a href="https://linkedin.com/company/murangi-co" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">LinkedIn</a></span></div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-bottom-text">ACA QUALIFIED · ICAEW MEMBER · XERO CERTIFIED ADVISER · REGISTERED IN ENGLAND AND WALES</span>
+    <span class="footer-bottom-text">© 2025 Murangi & Co. All rights reserved.</span>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════ SERVICE: CFO ══════════════════════════════════════ -->
+<div class="page" id="page-service-cfo">
+
+  <!-- Hero -->
+  <div class="svc-hero">
+    <div class="svc-hero-photo">
+      <img class="svc-hero-img" src="images/service-cfo-hero.jpg" alt="Two puzzle pieces being fitted together">
+    </div>
+    <div class="svc-hero-gradient"></div>
+    <div style="width:100%;">
+      <div class="svc-hero-content">
+        <div class="svc-hero-crumb">
+          <span class="svc-hero-crumb-link" onclick="showPage('services')">SERVICES</span>
+          <span class="svc-hero-crumb-sep">/</span>
+          <span>FOR BUSINESSES</span>
+        </div>
+        <div class="svc-hero-h1">Fractional CFO<br>&amp; <em>Strategic Advisory.</em></div>
+        <div class="svc-hero-tag">The financial expertise your business needs. Without the full-time hire.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Problem -->
+  <div class="section bg-cream">
+    <div class="two-col-wide" style="grid-template-columns:1fr;max-width:820px;margin:0 auto;">
+      <div class="svc-problem-prose">
+        <div class="section-eyebrow">THE PROBLEM</div>
+        <div class="section-body">There is a gap that sits at the heart of most growing small businesses. On one side, there are the day-to-day financial tasks: bookkeeping, VAT, payroll, filing. On the other, there are the bigger strategic questions: <em>Can we afford to hire? Should we take on this contract? What does our cash position look like in six months? Are we ready to approach investors?</em></div>
+        <div class="section-body">Most small businesses have something handling the first category. Almost none have anyone handling the second. And that gap is where costly decisions get made without the right information, where growth opportunities are missed, and where businesses that should be thriving find themselves constantly reactive rather than in control.</div>
+        <div class="section-body">A full-time Finance Director or CFO costs between <strong>£80,000 and £150,000 a year</strong>. For an early-stage or growing SME, that is not a realistic hire. So the strategic financial thinking simply does not happen — or it falls to a business owner already stretched across every other function of the business. This service closes that gap.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- What We Offer -->
+  <div class="section bg-white">
+    <div style="text-align:center; margin-bottom:48px;">
+      <div class="section-eyebrow">WHAT WE OFFER</div>
+      <div class="section-title">Everything you need, <em>senior-level thinking.</em></div>
+    </div>
+    <div class="svc-offer-list">
+
+      <div class="svc-offer-item">
+        <div class="svc-offer-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>
+        </div>
+        <div>
+          <div class="svc-offer-title">Financial Analysis &amp; Reporting</div>
+          <div class="svc-offer-text">We produce clear, management-focused financial reporting that gives you a real picture of your business — not just statutory accounts once a year, but regular analysis of where your money is coming from, where it is going, and what the numbers are telling you. This includes <strong>margin analysis, cost reviews, revenue tracking</strong>, and commentary that translates figures into decisions.</div>
+        </div>
+      </div>
+
+      <div class="svc-offer-item">
+        <div class="svc-offer-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-1"/><path d="M16 12h5v4h-5a2 2 0 0 1 0-4z"/></svg>
+        </div>
+        <div>
+          <div class="svc-offer-title">Cash Flow Management &amp; Forecasting</div>
+          <div class="svc-offer-text">Cash flow kills more businesses than bad strategy. We build and maintain a rolling cash flow forecast — modelling income, expenditure, and timing — so you always know what your cash position looks like weeks and months ahead. This means you can plan hires, manage supplier payments, anticipate shortfalls, and make investment decisions with confidence rather than anxiety.</div>
+        </div>
+      </div>
+
+      <div class="svc-offer-item">
+        <div class="svc-offer-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19.43 12.98c.04-.32.07-.64.07-.98 0-.34-.03-.66-.07-.98l2.11-1.65a.5.5 0 0 0 .12-.64l-2-3.46a.5.5 0 0 0-.61-.22l-2.49 1a7.03 7.03 0 0 0-1.69-.98l-.38-2.65A.5.5 0 0 0 14 2h-4a.5.5 0 0 0-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1a.5.5 0 0 0-.61.22l-2 3.46a.5.5 0 0 0 .12.64L4.57 11c-.04.32-.07.65-.07.98 0 .33.03.66.07.98l-2.11 1.65a.5.5 0 0 0-.12.64l2 3.46c.14.25.43.34.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65A.5.5 0 0 0 10 22h4a.5.5 0 0 0 .49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.18.07.47-.02.61-.22l2-3.46a.5.5 0 0 0-.12-.64l-2.11-1.65zM12 15.5A3.5 3.5 0 1 1 12 8.5a3.5 3.5 0 0 1 0 7z"/></svg>
+        </div>
+        <div>
+          <div class="svc-offer-title">Financial Modelling</div>
+          <div class="svc-offer-text">When your business faces a significant decision — taking on a major contract, opening a new location, bringing in a business partner, applying for a loan — we build the financial model that tests it properly. <strong>Scenario analysis, sensitivity testing, break-even modelling</strong>: the rigorous financial thinking that gives you confidence in a decision before you commit to it.</div>
+        </div>
+      </div>
+
+      <div class="svc-offer-item">
+        <div class="svc-offer-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M11 17l2 2a1 1 0 1 0 3-3"/><path d="M14 14l2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87"/></svg>
+        </div>
+        <div>
+          <div class="svc-offer-title">Funding &amp; Investor Support</div>
+          <div class="svc-offer-text">If your business is raising finance — through a bank loan, a grant, angel investment, or a structured funding round — we support the financial side of that process. This includes building <strong>investor-ready financial projections</strong>, preparing the financial sections of funding applications, and ensuring your numbers tell a coherent, credible story to whoever is on the other side of the table.</div>
+        </div>
+      </div>
+
+      <div class="svc-offer-item">
+        <div class="svc-offer-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+        </div>
+        <div>
+          <div class="svc-offer-title">Strategic Finance Advisory</div>
+          <div class="svc-offer-text">Beyond specific projects, this service provides ongoing access to senior financial thinking as your business evolves. That might mean input on a pricing decision, a view on a potential acquisition, advice on how to structure a contract, or simply a quarterly conversation about where the business stands financially and what the priorities should be. The value is having someone qualified and commercially aware in your corner — consistently, not just at year-end.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  
+  <!-- Punchy callouts (replaces photo strip) -->
+  <div class="svc-callouts">
+    <div class="svc-callout">
+      <div class="svc-callout-text">Strategic advisory, on <em>your side.</em></div>
+    </div>
+    <div class="svc-callout">
+      <div class="svc-callout-text">Ongoing support for the decisions that <em>matter.</em></div>
+    </div>
+    <div class="svc-callout">
+      <div class="svc-callout-text">Investor-ready, <em>every step</em> of the way.</div>
+    </div>
+  </div>
+
+  <!-- What You Get Out of It — outcomes on navy -->
+  <div class="svc-outcomes-wrap">
+    <div class="svc-outcomes-head">
+      <div class="section-eyebrow">WHAT YOU GET OUT OF IT</div>
+      <div class="section-title light">A foundation you can <em>lead with.</em></div>
+    </div>
+    <div class="svc-outcomes-grid">
+
+      <div class="svc-outcome">
+        <div class="svc-outcome-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="svc-outcome-text">Regular, meaningful financial reporting you can use to run the business</div>
+      </div>
+
+      <div class="svc-outcome">
+        <div class="svc-outcome-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="svc-outcome-text">A rolling cash flow forecast that removes uncertainty from financial planning</div>
+      </div>
+
+      <div class="svc-outcome">
+        <div class="svc-outcome-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="svc-outcome-text">Rigorous financial modelling for major business decisions</div>
+      </div>
+
+      <div class="svc-outcome">
+        <div class="svc-outcome-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="svc-outcome-text">Investor-ready financial projections and funding support when you need it</div>
+      </div>
+
+      <div class="svc-outcome">
+        <div class="svc-outcome-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="svc-outcome-text">Ongoing access to CFO-level thinking — without the full-time cost</div>
+      </div>
+
+      <div class="svc-outcome">
+        <div class="svc-outcome-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="svc-outcome-text">Financial decisions made from a position of clarity, not guesswork</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Why This Matters callout -->
+  <div class="section bg-white">
+    <div class="svc-why">
+      <div class="svc-why-label">WHY THIS MATTERS</div>
+      <div class="svc-why-text">Most SMEs at the early and growth stages cannot justify a full-time Finance Director, yet they face decisions that require exactly that level of thinking. Whether considering a loan, preparing to pitch investors, or simply trying to understand where the money is going, having a qualified finance professional involved in those conversations can be the difference between a well-structured decision and a costly one.</div>
+    </div>
+  </div>
+
+  <!-- Who This Is For -->
+  <div class="section bg-cream">
+    <div style="text-align:center; margin-bottom:36px;">
+      <div class="section-eyebrow">WHO THIS IS FOR</div>
+      <div class="section-title">Built for <em>businesses with ambition.</em></div>
+    </div>
+    <div class="svc-who-grid">
+      <div class="svc-who-item">
+        <div class="svc-who-marker"></div>
+        <div class="svc-who-text">Early-stage businesses growing fast and needing financial structure to match</div>
+      </div>
+      <div class="svc-who-item">
+        <div class="svc-who-marker"></div>
+        <div class="svc-who-text">Businesses approaching a funding round or investor conversation</div>
+      </div>
+      <div class="svc-who-item">
+        <div class="svc-who-marker"></div>
+        <div class="svc-who-text">Business owners preparing a loan or grant application who need robust financial projections</div>
+      </div>
+      <div class="svc-who-item">
+        <div class="svc-who-marker"></div>
+        <div class="svc-who-text">SMEs making a significant strategic decision — a new hire, location, or product line — and wanting proper financial analysis before committing</div>
+      </div>
+      <div class="svc-who-item">
+        <div class="svc-who-marker"></div>
+        <div class="svc-who-text">Any business owner making important decisions without a clear enough financial picture</div>
+      </div>
+    </div>
+
+    <div class="svc-availability">Available as part of the <span onclick="showPage('packages')">Growth and Strategic packages, or as a standalone project engagement</span>.</div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-section">
+    <div>
+      <div class="cta-title">CFO-level thinking in your corner</div>
+      <div class="cta-sub">Book a free 30-minute call. We&#x2019;ll talk through where the business is, what decisions are coming up, and how this service can support them — without the full-time hire.</div>
+      <button class="btn-primary" onclick="showPage('contact')">BOOK A FREE INTRODUCTORY CALL</button>
+    </div>
+    <div class="cta-photo-block" style="background:none;border:none;padding:0;overflow:hidden;">
+      <img class="cta-photo-img" src="images/cta-consultation.jpg" alt="Taking notes together across a table">
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div><div class="footer-logo">MURANGI & CO</div><div class="footer-tagline">FINANCIAL ADVISORY</div><div class="footer-desc">Chartered Accountants · United Kingdom<br>Simplifying Finances. Empowering Growth.</div></div>
+    <div><div class="footer-col-title">NAVIGATION</div><span class="footer-link" onclick="showPage('home')">Home</span><span class="footer-link" onclick="showPage('about')">About Us</span><span class="footer-link" onclick="showPage('services')">Services</span><span class="footer-link" onclick="showPage('packages')">Packages</span></div>
+    <div><div class="footer-col-title">CONTACT</div><span class="footer-link"><a href="mailto:murangiandco@gmail.com" style="color:inherit;text-decoration:none;">murangiandco@gmail.com</a></span><span class="footer-link"><a href="tel:+441617265041" style="color:inherit;text-decoration:none;">0161 726 5041</a></span><span class="footer-link"><a href="https://linkedin.com/company/murangi-co" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">LinkedIn</a></span></div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-bottom-text">ACA QUALIFIED · ICAEW MEMBER · XERO CERTIFIED ADVISER · REGISTERED IN ENGLAND AND WALES</span>
+    <span class="footer-bottom-text">© 2025 Murangi & Co. All rights reserved.</span>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════ SERVICE: PERSONAL-TAX (RETURNS & PLANNING) ══════════════════════════════════════ -->
+<div class="page" id="page-service-personal-tax">
+
+  <!-- Hero -->
+  <div class="svc-hero">
+    <div class="svc-hero-photo">
+      <img class="svc-hero-img" src="images/service-personal-tax-hero.jpg" alt="Handwritten tax deadline note beside a pen on a desk calendar">
+    </div>
+    <div class="svc-hero-gradient"></div>
+    <div style="width:100%;">
+      <div class="svc-hero-content">
+        <div class="svc-hero-crumb">
+          <span class="svc-hero-crumb-link" onclick="showPage('services')">SERVICES</span>
+          <span class="svc-hero-crumb-sep">/</span>
+          <span>FOR INDIVIDUALS</span>
+        </div>
+        <div class="svc-hero-h1">Personal Tax Returns<br>&amp; <em>Planning.</em></div>
+        <div class="svc-hero-tag">The right return, on time. A plan that stops you overpaying.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Problem -->
+  <div class="section bg-cream">
+    <div class="two-col-wide" style="grid-template-columns:1fr;max-width:820px;margin:0 auto;">
+      <div class="svc-problem-prose">
+        <div class="section-eyebrow">THE PROBLEM</div>
+        <div class="section-body">Self Assessment is the system HMRC uses to collect tax from individuals whose tax is not fully handled through PAYE. Freelancers, sole traders, landlords, higher earners, and individuals with investment income are all required to file — and many people are surprised to learn that <strong>even a small amount of additional income can trigger the obligation</strong>. The penalties for getting it wrong are not trivial: £100 for being a day late, daily penalties after three months, and interest accruing on any tax due.</div>
+        <div class="section-body">Filing the return is only half the picture. Understanding how to legally and legitimately reduce your tax liability is the other — and most people are simply unaware of what is available to them, either missing reliefs they were entitled to claim or paying more tax than they need to. Tax planning simply means structuring your affairs to make full use of the reliefs and allowances that Parliament has deliberately put in place. <strong>It is entirely legitimate. It is not tax evasion, and it does not involve anything aggressive or complicated.</strong></div>
+        <div class="section-body">This service handles both. A properly prepared return that keeps you compliant and filed ahead of the deadline, with HMRC correspondence handled by a qualified professional — and a proactive review of your full financial picture that identifies every legal opportunity to reduce your liability before the tax year ends, not after it.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- What We Offer -->
+  <div class="section bg-white">
+    <div style="text-align:center; margin-bottom:48px;">
+      <div class="section-eyebrow">WHAT WE OFFER</div>
+      <div class="section-title">Everything you need, <em>filed and planned.</em></div>
+    </div>
+    <div class="svc-offer-list">
+
+      <div class="svc-offer-item">
+        <div class="svc-offer-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </div>
+        <div>
+          <div class="svc-offer-title">Review of All Income Sources</div>
+          <div class="svc-offer-text">We carry out a thorough review of all your income for the tax year — employment income, rental income, freelance or self-employed earnings, dividends, savings interest, capital gains, and any other sources. Nothing is overlooked, and nothing is included that should not be.</div>
+        </div>
+      </div>
+
+      <div class="svc-offer-item">
+        <div class="svc-offer-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="10" y2="10"/><line x1="12" y1="10" x2="14" y2="10"/><line x1="8" y1="14" x2="10" y2="14"/><line x1="12" y1="14" x2="14" y2="14"/></svg>
+        </div>
+        <div>
+          <div class="svc-offer-title">Deductions, Reliefs &amp; Allowances</div>
+          <div class="svc-offer-text">We identify and apply every deduction, relief, and allowance available to you — business expenses for the self-employed, allowable costs for landlords, <strong>pension contributions, gift aid</strong>, professional subscriptions, and the <strong>personal savings, dividend, marriage, and property allowances</strong>. This is where a significant number of individuals overpay by simply not knowing what they can claim.</div>
+        </div>
+      </div>
+
+      <div class="svc-offer-item">
+        <div class="svc-offer-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        </div>
+        <div>
+          <div class="svc-offer-title">Preparation and Submission</div>
+          <div class="svc-offer-text">We prepare your SA100 return in full and submit it to HMRC ahead of the relevant deadline. You receive a clear summary of the return and the tax liability before submission, so there are no surprises.</div>
+        </div>
+      </div>
+
+      <div class="svc-offer-item">
+        <div class="svc-offer-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div>
+          <div class="svc-offer-title">HMRC Liaison</div>
+          <div class="svc-offer-text">If HMRC has questions about a return or if any correspondence arises following submission, we handle that communication on your behalf. You are not left to navigate HMRC processes alone.</div>
+        </div>
+      </div>
+
+      <div class="svc-offer-item">
+        <div class="svc-offer-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+        </div>
+        <div>
+          <div class="svc-offer-title">Pension, ISA &amp; Investment Review</div>
+          <div class="svc-offer-text">Pension contributions are one of the most effective and underused tools for reducing a tax bill. We review your contribution levels, model the impact on your take-home pay and tax liability, and identify <strong>unused annual allowance from previous years</strong> that can be carried forward — alongside a review of your ISA allowances and other tax-efficient investment vehicles.</div>
+        </div>
+      </div>
+
+      <div class="svc-offer-item">
+        <div class="svc-offer-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+        </div>
+        <div>
+          <div class="svc-offer-title">Year-Ahead Planning &amp; Timing</div>
+          <div class="svc-offer-text">For individuals with flexibility over when they recognise income — the self-employed, directors, and those with investment assets — timing can make a material difference. We advise on structuring income recognition and asset disposals, and provide forward-looking advice for the year ahead, so that when the next return is due, the planning has already been done.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Punchy callouts (replaces photo strip) -->
+  <div class="svc-callouts">
+    <div class="svc-callout">
+      <div class="svc-callout-text">Every allowance <em>identified.</em></div>
+    </div>
+    <div class="svc-callout">
+      <div class="svc-callout-text">Submitted well ahead of the <em>deadline.</em></div>
+    </div>
+    <div class="svc-callout">
+      <div class="svc-callout-text">A year-ahead plan, not a year-end <em>panic.</em></div>
+    </div>
+  </div>
+
+  <!-- What You Get Out of It — outcomes on navy -->
+  <div class="svc-outcomes-wrap">
+    <div class="svc-outcomes-head">
+      <div class="section-eyebrow">WHAT YOU GET OUT OF IT</div>
+      <div class="section-title light">A foundation you can <em>rely on.</em></div>
+    </div>
+    <div class="svc-outcomes-grid">
+
+      <div class="svc-outcome">
+        <div class="svc-outcome-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="svc-outcome-text">A correctly prepared and filed Self Assessment return</div>
+      </div>
+
+      <div class="svc-outcome">
+        <div class="svc-outcome-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="svc-outcome-text">Every deduction, relief, and allowance identified and claimed</div>
+      </div>
+
+      <div class="svc-outcome">
+        <div class="svc-outcome-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="svc-outcome-text">Submission ahead of deadline — no late filing penalties</div>
+      </div>
+
+      <div class="svc-outcome">
+        <div class="svc-outcome-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="svc-outcome-text">A clear picture of your tax position, and where overpayment is occurring</div>
+      </div>
+
+      <div class="svc-outcome">
+        <div class="svc-outcome-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="svc-outcome-text">A year-ahead plan designed to reduce your next tax bill</div>
+      </div>
+
+      <div class="svc-outcome">
+        <div class="svc-outcome-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="svc-outcome-text">A qualified professional handling any follow-up HMRC correspondence</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Why This Matters callout -->
+  <div class="section bg-white">
+    <div class="svc-why">
+      <div class="svc-why-label">WHY THIS MATTERS</div>
+      <div class="svc-why-text">Many people miss the requirement to file altogether, or submit returns with errors — resulting in penalties or unnecessary overpayments. And many individuals with straightforward affairs are overpaying simply because they do not know what they are entitled to claim. A properly prepared return and a proactive plan ensure you pay the correct amount of tax — and not a pound more.</div>
+    </div>
+  </div>
+
+  <!-- Who This Is For -->
+  <div class="section bg-cream">
+    <div style="text-align:center; margin-bottom:36px;">
+      <div class="section-eyebrow">WHO THIS IS FOR</div>
+      <div class="section-title">Built for <em>anyone who needs to file or plan.</em></div>
+    </div>
+    <div class="svc-who-grid">
+      <div class="svc-who-item">
+        <div class="svc-who-marker"></div>
+        <div class="svc-who-text">Freelancers, contractors, and sole traders</div>
+      </div>
+      <div class="svc-who-item">
+        <div class="svc-who-marker"></div>
+        <div class="svc-who-text">Landlords with rental income</div>
+      </div>
+      <div class="svc-who-item">
+        <div class="svc-who-marker"></div>
+        <div class="svc-who-text">Individuals with dividends, capital gains, or multiple income sources</div>
+      </div>
+      <div class="svc-who-item">
+        <div class="svc-who-marker"></div>
+        <div class="svc-who-text">Higher earners — particularly those approaching the £50,000 or £100,000 thresholds, or who have received a P800 notice from HMRC</div>
+      </div>
+      <div class="svc-who-item">
+        <div class="svc-who-marker"></div>
+        <div class="svc-who-text">Anyone who has never filed a Self Assessment return but suspects they should have</div>
+      </div>
+      <div class="svc-who-item">
+        <div class="svc-who-marker"></div>
+        <div class="svc-who-text">Anyone who has never had their tax position reviewed and suspects they may be overpaying</div>
+      </div>
+    </div>
+
+    <div class="svc-availability">Available as a standalone engagement or as part of the <span onclick="showPage('packages')">Personal Tax Returns &amp; Planning or Personal Financial Planning &amp; Budgeting packages</span>.</div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-section">
+    <div>
+      <div class="cta-title">Want your return done properly — and your next bill smaller?</div>
+      <div class="cta-sub">Book a free 30-minute call. We&#x2019;ll talk through your situation, confirm whether Self Assessment applies to you, and outline where there are legal, legitimate opportunities to reduce what you pay — no obligation, no hard sell.</div>
+      <button class="btn-primary" onclick="showPage('contact')">BOOK A FREE INTRODUCTORY CALL</button>
+    </div>
+    <div class="cta-photo-block" style="background:none;border:none;padding:0;overflow:hidden;">
+      <img class="cta-photo-img" src="images/cta-consultation.jpg" alt="Taking notes together across a table">
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div><div class="footer-logo">MURANGI & CO</div><div class="footer-tagline">FINANCIAL ADVISORY</div><div class="footer-desc">Chartered Accountants · United Kingdom<br>Simplifying Finances. Empowering Growth.</div></div>
+    <div><div class="footer-col-title">NAVIGATION</div><span class="footer-link" onclick="showPage('home')">Home</span><span class="footer-link" onclick="showPage('about')">About Us</span><span class="footer-link" onclick="showPage('services')">Services</span><span class="footer-link" onclick="showPage('packages')">Packages</span></div>
+    <div><div class="footer-col-title">CONTACT</div><span class="footer-link"><a href="mailto:murangiandco@gmail.com" style="color:inherit;text-decoration:none;">murangiandco@gmail.com</a></span><span class="footer-link"><a href="tel:+441617265041" style="color:inherit;text-decoration:none;">0161 726 5041</a></span><span class="footer-link"><a href="https://linkedin.com/company/murangi-co" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">LinkedIn</a></span></div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-bottom-text">ACA QUALIFIED · ICAEW MEMBER · XERO CERTIFIED ADVISER · REGISTERED IN ENGLAND AND WALES</span>
+    <span class="footer-bottom-text">© 2025 Murangi & Co. All rights reserved.</span>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════ SERVICE: FINANCIAL-PLANNING ══════════════════════════════════════ -->
+<div class="page" id="page-service-financial-planning">
+
+  <!-- Hero -->
+  <div class="svc-hero">
+    <div class="svc-hero-photo">
+      <img class="svc-hero-img" src="images/service-financial-planning-hero.jpg" alt="Individual reviewing her finances on a tablet">
+    </div>
+    <div class="svc-hero-gradient"></div>
+    <div style="width:100%;">
+      <div class="svc-hero-content">
+        <div class="svc-hero-crumb">
+          <span class="svc-hero-crumb-link" onclick="showPage('services')">SERVICES</span>
+          <span class="svc-hero-crumb-sep">/</span>
+          <span>FOR INDIVIDUALS</span>
+        </div>
+        <div class="svc-hero-h1">Personal Financial Planning<br>&amp; <em>Budgeting.</em></div>
+        <div class="svc-hero-tag">Understand your money. Take control of it.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Problem -->
+  <div class="section bg-cream">
+    <div class="two-col-wide" style="grid-template-columns:1fr;max-width:820px;margin:0 auto;">
+      <div class="svc-problem-prose">
+        <div class="section-eyebrow">THE PROBLEM</div>
+        <div class="section-body">A large number of people earn a reasonable income but have little clarity on where it actually goes or how to make meaningful progress towards the things that matter to them. The money comes in, the money goes out, and at the end of the month there is either a little left over or there is not — without a clear understanding of why.</div>
+        <div class="section-body">Generic budgeting apps and tools provide useful data. They show you what you have spent and where. But <strong>data is not the same as a plan</strong>. They do not sit with you and have an honest conversation about what your financial picture actually looks like. They do not help you identify what is realistic, what needs to change, and what a path forward actually involves. That is what this service is for.</div>
+        <div class="section-body">This is structured, one-to-one financial planning support — built around your life, your goals, and your specific circumstances. It is not about selling products or pushing investments. It is about helping you understand your money and feel genuinely in control of it.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- What We Offer -->
+  <div class="section bg-white">
+    <div style="text-align:center; margin-bottom:48px;">
+      <div class="section-eyebrow">WHAT WE OFFER</div>
+      <div class="section-title">Everything you need, <em>for your life.</em></div>
+    </div>
+    <div class="svc-offer-list">
+
+      <div class="svc-offer-item">
+        <div class="svc-offer-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </div>
+        <div>
+          <div class="svc-offer-title">Initial Financial Review</div>
+          <div class="svc-offer-text">We begin with a thorough, honest review of your current financial position — income, outgoings, debts, savings, financial commitments, and any existing assets or investments. This is done <strong>without judgement</strong>. The point is to get a clear picture of where you are, before working out how to get to where you want to be.</div>
+        </div>
+      </div>
+
+      <div class="svc-offer-item">
+        <div class="svc-offer-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+        <div>
+          <div class="svc-offer-title">Goal Setting</div>
+          <div class="svc-offer-text">Once there is a clear picture of the current position, we identify what you are working towards — whether that is building an emergency fund, saving for a property deposit, paying down debt, building long-term savings, or simply having a clearer month-to-month structure. Goals are made specific and realistic, not aspirational and vague.</div>
+        </div>
+      </div>
+
+      <div class="svc-offer-item">
+        <div class="svc-offer-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+        </div>
+        <div>
+          <div class="svc-offer-title">Personalised Budget &amp; Financial Plan</div>
+          <div class="svc-offer-text">We put together a personalised budget and financial plan that reflects your actual income and outgoings, incorporates your goals, and sets out a realistic path to achieving them. This is not a spreadsheet template with your name on it. <strong>It is a plan that is specific to your situation and built to be followed.</strong></div>
+        </div>
+      </div>
+
+      <div class="svc-offer-item">
+        <div class="svc-offer-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        </div>
+        <div>
+          <div class="svc-offer-title">Regular Review &amp; Adjustment</div>
+          <div class="svc-offer-text">Life changes. Income changes, circumstances change, and plans need to adapt. We review progress at agreed intervals — monthly, quarterly, or as needed — and adjust the plan when circumstances require it. The relationship is ongoing, not a one-off exercise.</div>
+        </div>
+      </div>
+
+      <div class="svc-offer-item">
+        <div class="svc-offer-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+        </div>
+        <div>
+          <div class="svc-offer-title">Financial Education</div>
+          <div class="svc-offer-text">Where relevant, we explain the financial concepts and decisions that affect your plan — how different types of debt work, how savings and interest interact, how tax affects take-home pay, and how small consistent changes in behaviour compound into meaningful results over time. <strong>Understanding the why behind the plan</strong> makes it significantly more likely to be followed.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  
+  <!-- Punchy callouts (replaces photo strip) -->
+  <div class="svc-callouts">
+    <div class="svc-callout">
+      <div class="svc-callout-text">A clear picture of where you <em>stand.</em></div>
+    </div>
+    <div class="svc-callout">
+      <div class="svc-callout-text">A realistic plan you'll actually <em>follow.</em></div>
+    </div>
+    <div class="svc-callout">
+      <div class="svc-callout-text">Support that adapts as <em>life changes.</em></div>
+    </div>
+  </div>
+
+  <!-- What You Get Out of It — outcomes on navy -->
+  <div class="svc-outcomes-wrap">
+    <div class="svc-outcomes-head">
+      <div class="section-eyebrow">WHAT YOU GET OUT OF IT</div>
+      <div class="section-title light">A foundation you can <em>take control.</em></div>
+    </div>
+    <div class="svc-outcomes-grid">
+
+      <div class="svc-outcome">
+        <div class="svc-outcome-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="svc-outcome-text">A clear, honest picture of your current financial position</div>
+      </div>
+
+      <div class="svc-outcome">
+        <div class="svc-outcome-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="svc-outcome-text">Specific, realistic financial goals with a plan to reach them</div>
+      </div>
+
+      <div class="svc-outcome">
+        <div class="svc-outcome-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="svc-outcome-text">A personalised budget that reflects how you actually live — not a generic template</div>
+      </div>
+
+      <div class="svc-outcome">
+        <div class="svc-outcome-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="svc-outcome-text">Regular reviews to keep the plan on track as circumstances change</div>
+      </div>
+
+      <div class="svc-outcome">
+        <div class="svc-outcome-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="svc-outcome-text">A genuine understanding of your own finances, not just data</div>
+      </div>
+
+      <div class="svc-outcome">
+        <div class="svc-outcome-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="svc-outcome-text">The feeling of being in control of your money rather than the other way around</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Why This Matters callout -->
+  <div class="section bg-white">
+    <div class="svc-why">
+      <div class="svc-why-label">WHY THIS MATTERS</div>
+      <div class="svc-why-text">Many people earn well and still feel financially anxious or stuck. The issue is rarely income — it is the absence of a clear plan. This service fills that gap with real, tailored advice that goes beyond what any app or spreadsheet can offer, because the most important part of financial planning is the conversation.</div>
+    </div>
+  </div>
+
+  <!-- Who This Is For -->
+  <div class="section bg-cream">
+    <div style="text-align:center; margin-bottom:36px;">
+      <div class="section-eyebrow">WHO THIS IS FOR</div>
+      <div class="section-title">Built for <em>anyone wanting clarity.</em></div>
+    </div>
+    <div class="svc-who-grid">
+      <div class="svc-who-item">
+        <div class="svc-who-marker"></div>
+        <div class="svc-who-text">Individuals who earn a good income but feel they have little to show for it</div>
+      </div>
+      <div class="svc-who-item">
+        <div class="svc-who-marker"></div>
+        <div class="svc-who-text">People working towards a specific financial goal — property, debt freedom, financial security — and wanting structured support to get there</div>
+      </div>
+      <div class="svc-who-item">
+        <div class="svc-who-marker"></div>
+        <div class="svc-who-text">Anyone who has tried budgeting apps and found they provide data but not direction</div>
+      </div>
+      <div class="svc-who-item">
+        <div class="svc-who-marker"></div>
+        <div class="svc-who-text">Individuals going through a significant life change — a new job, a relationship change, a move — who want to reassess their financial position</div>
+      </div>
+      <div class="svc-who-item">
+        <div class="svc-who-marker"></div>
+        <div class="svc-who-text">People who simply want to feel more in control of their money</div>
+      </div>
+    </div>
+
+    <div class="svc-availability">Available as a standalone engagement or as part of the <span onclick="showPage('packages')">Personal Financial Planning &amp; Budgeting package</span>.</div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-section">
+    <div>
+      <div class="cta-title">Ready to feel in control of your money?</div>
+      <div class="cta-sub">Book a free 30-minute call. We&#x2019;ll talk through where you are, where you want to be, and whether this kind of structured support is the right fit — no obligation, no hard sell.</div>
+      <button class="btn-primary" onclick="showPage('contact')">BOOK A FREE INTRODUCTORY CALL</button>
+    </div>
+    <div class="cta-photo-block" style="background:none;border:none;padding:0;overflow:hidden;">
+      <img class="cta-photo-img" src="images/cta-consultation.jpg" alt="Taking notes together across a table">
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div><div class="footer-logo">MURANGI & CO</div><div class="footer-tagline">FINANCIAL ADVISORY</div><div class="footer-desc">Chartered Accountants · United Kingdom<br>Simplifying Finances. Empowering Growth.</div></div>
+    <div><div class="footer-col-title">NAVIGATION</div><span class="footer-link" onclick="showPage('home')">Home</span><span class="footer-link" onclick="showPage('about')">About Us</span><span class="footer-link" onclick="showPage('services')">Services</span><span class="footer-link" onclick="showPage('packages')">Packages</span></div>
+    <div><div class="footer-col-title">CONTACT</div><span class="footer-link"><a href="mailto:murangiandco@gmail.com" style="color:inherit;text-decoration:none;">murangiandco@gmail.com</a></span><span class="footer-link"><a href="tel:+441617265041" style="color:inherit;text-decoration:none;">0161 726 5041</a></span><span class="footer-link"><a href="https://linkedin.com/company/murangi-co" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">LinkedIn</a></span></div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-bottom-text">ACA QUALIFIED · ICAEW MEMBER · XERO CERTIFIED ADVISER · REGISTERED IN ENGLAND AND WALES</span>
+    <span class="footer-bottom-text">© 2025 Murangi & Co. All rights reserved.</span>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════ PACKAGES PAGE ══════════════════════════════════════ -->
+<div class="page" id="page-packages">
+
+  <!-- Hero -->
+  <div class="hero" style="min-height:260px;">
+    <div style="width:100%;">
+      <div class="hero-content hero-center">
+        <div class="hero-eyebrow">PACKAGES</div>
+        <div class="hero-h1" style="font-size:44px;">Clear, structured support at <em>every stage.</em></div>
+        <div class="hero-sub">Our services are available as structured packages or on a standalone basis — whichever fits your situation and budget best.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- For Businesses -->
+  <div class="section bg-cream">
+    <div class="section-label-row">
+      <div class="section-label-text">FOR BUSINESSES</div>
+      <div class="section-label-line"></div>
+    </div>
+    <div class="pricing-grid">
+      <div class="pkg-card">
+        <div class="pkg-header">
+          <div class="pkg-tier">FOUNDATION</div>
+          <div class="pkg-name">Foundation Package</div>
+          <div class="pkg-desc">For early-stage businesses that need to get their finances properly set up and stay compliant.</div>
+        </div>
+        <div class="pkg-divider"></div>
+        <div class="pkg-features">
+          <div class="pkg-feature"><span class="pkg-check">✓</span>Bookkeeping setup and ongoing oversight</div>
+          <div class="pkg-feature"><span class="pkg-check">✓</span>Annual accounts and Corporation Tax return</div>
+          <div class="pkg-feature"><span class="pkg-check">✓</span>VAT registration and returns (where applicable)</div>
+          <div class="pkg-feature"><span class="pkg-check">✓</span>MTD onboarding and registration</div>
+        </div>
+        <div class="pkg-cta"><button class="btn-pkg-outline" style="width:100%;">GET STARTED</button></div>
+      </div>
+
+      <div class="pkg-card featured">
+        <div class="pkg-header">
+          <div class="pkg-badge">MOST POPULAR</div>
+          <div class="pkg-name light">Growth Package</div>
+          <div class="pkg-desc light">For businesses that are operating and want to make more informed financial decisions.</div>
+        </div>
+        <div class="pkg-divider light"></div>
+        <div class="pkg-features">
+          <div class="pkg-feature light"><span class="pkg-check">✓</span>Everything in Foundation, plus:</div>
+          <div class="pkg-feature light"><span class="pkg-check">✓</span>Quarterly financial reviews</div>
+          <div class="pkg-feature light"><span class="pkg-check">✓</span>Cash flow forecasting and monitoring</div>
+          <div class="pkg-feature light"><span class="pkg-check">✓</span>One project-specific financial model per quarter</div>
+        </div>
+        <div class="pkg-cta"><button class="btn-pkg-primary" style="width:100%;">GET STARTED</button></div>
+      </div>
+
+      <div class="pkg-card">
+        <div class="pkg-header">
+          <div class="pkg-tier">STRATEGIC</div>
+          <div class="pkg-name">Strategic Package</div>
+          <div class="pkg-desc">For businesses with active growth plans, investor conversations, or complex financial requirements.</div>
+        </div>
+        <div class="pkg-divider"></div>
+        <div class="pkg-features">
+          <div class="pkg-feature"><span class="pkg-check">✓</span>Everything in Growth, plus:</div>
+          <div class="pkg-feature"><span class="pkg-check">✓</span>Ongoing Fractional CFO advisory</div>
+          <div class="pkg-feature"><span class="pkg-check">✓</span>Investor-ready financial reporting</div>
+          <div class="pkg-feature"><span class="pkg-check">✓</span>Support with funding applications and pitch decks</div>
+        </div>
+        <div class="pkg-cta"><button class="btn-pkg-outline" style="width:100%;">GET STARTED</button></div>
+      </div>
+    </div>
+
+    <div class="flex-grid">
+      <div class="flex-card">
+        <div class="flex-card-body">
+          <div class="flex-tier">FLEXIBLE</div>
+          <div class="flex-name">Pay As You Go</div>
+          <div class="flex-desc">For businesses that need specific services at a point in time. Each service available on a standalone basis — a one-off set of accounts, a single VAT return, an MTD registration, or a specific cash flow model.</div>
+        </div>
+      </div>
+      <div class="flex-card">
+        <div class="flex-card-body">
+          <div class="flex-tier">TAILORED</div>
+          <div class="flex-name">Bespoke Engagement</div>
+          <div class="flex-desc">For businesses with requirements that do not fit a standard package. We scope the engagement together — relevant for IPO readiness, financial due diligence, or management reporting build-outs.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- For Individuals -->
+  <div class="section bg-white">
+    <div class="section-label-row">
+      <div class="section-label-text">FOR INDIVIDUALS</div>
+      <div class="section-label-line"></div>
+    </div>
+    <div class="pricing-grid pricing-grid-2">
+      <div class="pkg-card">
+        <div class="pkg-header">
+          <div class="pkg-tier">INDIVIDUAL</div>
+          <div class="pkg-name">Personal Tax Returns & Planning</div>
+          <div class="pkg-desc">Your Self Assessment prepared and filed, plus a proactive review of your tax position to identify planning opportunities for the year ahead.</div>
+        </div>
+        <div class="pkg-divider"></div>
+        <div class="pkg-features">
+          <div class="pkg-feature"><span class="pkg-check">✓</span>SA100 preparation and HMRC filing</div>
+          <div class="pkg-feature"><span class="pkg-check">✓</span>Income source review</div>
+          <div class="pkg-feature"><span class="pkg-check">✓</span>All deductions, reliefs, and allowances identified</div>
+          <div class="pkg-feature"><span class="pkg-check">✓</span>Full tax position review and year-ahead strategy</div>
+          <div class="pkg-feature"><span class="pkg-check">✓</span>Filed ahead of your deadline</div>
+        </div>
+        <div class="pkg-cta"><button class="btn-pkg-outline" style="width:100%;">GET STARTED</button></div>
+      </div>
+      <div class="pkg-card featured">
+        <div class="pkg-header">
+          <div class="pkg-badge">POPULAR</div>
+          <div class="pkg-name light">Personal Financial Planning & Budgeting</div>
+          <div class="pkg-desc light">Ongoing planning and budgeting support to help you set goals, build a plan, and stay on track.</div>
+        </div>
+        <div class="pkg-divider light"></div>
+        <div class="pkg-features">
+          <div class="pkg-feature light"><span class="pkg-check">✓</span>Initial financial review and planning session</div>
+          <div class="pkg-feature light"><span class="pkg-check">✓</span>Personalised budget and financial plan</div>
+          <div class="pkg-feature light"><span class="pkg-check">✓</span>Regular ongoing check-ins</div>
+          <div class="pkg-feature light"><span class="pkg-check">✓</span>Year-end tax planning conversation</div>
+        </div>
+        <div class="pkg-cta"><button class="btn-pkg-primary" style="width:100%;">GET STARTED</button></div>
+      </div>
+      </div>
+
+      <div class="pricing-note">
+      <strong>Pricing note:</strong>
+      <p>Pricing is discussed and agreed prior to any engagement commencing. All services are provided by an ACA-qualified Chartered Accountant and ICAEW member. If you are not sure which option is right for you, book a free consultation and we will talk it through.</p>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-section">
+    <div>
+      <div class="cta-title">Not sure which package is right for you?</div>
+      <div class="cta-sub">Book a free 30-minute consultation and we will talk it through together — no obligation, no hard sell. Just an honest conversation about what you actually need.</div>
+      <button class="btn-primary" onclick="showPage('contact')">BOOK A FREE CONSULTATION</button>
+    </div>
+    <div class="cta-photo-block" style="background:none;border:none;padding:0;overflow:hidden;">
+      <img class="cta-photo-img" src="images/cta-consultation.jpg" alt="Taking notes together across a table">
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div><div class="footer-logo">MURANGI & CO</div><div class="footer-tagline">FINANCIAL ADVISORY</div><div class="footer-desc">Chartered Accountants · United Kingdom<br>Simplifying Finances. Empowering Growth.</div></div>
+    <div><div class="footer-col-title">NAVIGATION</div><span class="footer-link" onclick="showPage('home')">Home</span><span class="footer-link" onclick="showPage('about')">About Us</span><span class="footer-link" onclick="showPage('services')">Services</span><span class="footer-link" onclick="showPage('packages')">Packages</span></div>
+    <div><div class="footer-col-title">CONTACT</div><span class="footer-link"><a href="mailto:murangiandco@gmail.com" style="color:inherit;text-decoration:none;">murangiandco@gmail.com</a></span><span class="footer-link"><a href="tel:+441617265041" style="color:inherit;text-decoration:none;">0161 726 5041</a></span><span class="footer-link"><a href="https://linkedin.com/company/murangi-co" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">LinkedIn</a></span></div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-bottom-text">ACA QUALIFIED · ICAEW MEMBER · XERO CERTIFIED ADVISER · REGISTERED IN ENGLAND AND WALES</span>
+    <span class="footer-bottom-text">© 2025 Murangi & Co. All rights reserved.</span>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════ CONTACT PAGE ══════════════════════════════════════ -->
+<div class="page" id="page-contact">
+
+  <!-- Hero -->
+  <div class="svc-hero" style="min-height:340px;">
+    <div class="svc-hero-photo">
+      <svg width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="rgba(184,144,42,0.32)" stroke-width="0.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.75 12 19.79 19.79 0 0 1 1.72 3.27 2 2 0 0 1 3.7 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <div class="svc-hero-photo-note">📷 Friendly welcoming photo / office</div>
+    </div>
+    <div class="svc-hero-gradient"></div>
+    <div style="width:100%;">
+      <div class="svc-hero-content">
+        <div class="svc-hero-crumb">
+          <span>GET IN TOUCH</span>
+        </div>
+        <div class="svc-hero-h1">Let's <em>talk.</em></div>
+        <div class="svc-hero-tag">Whether you have a quick question or you're ready to book a call, choose whichever suits you best.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Split: form + Calendly -->
+  <div class="section bg-cream">
+    <div class="contact-split">
+
+      <!-- Contact form -->
+      <div class="contact-card">
+        <div class="contact-card-eyebrow">QUICK QUESTION</div>
+        <div class="contact-card-title">Send us a <em>message.</em></div>
+        <div class="contact-card-sub">Tell us a little about you and what you're looking for. We'll get back to you within one working day.</div>
+
+        <form class="contact-form" onsubmit="submitContact(event)">
+
+          <div class="contact-field">
+            <label class="contact-label" for="cf-name">Full name</label>
+            <input class="contact-input" type="text" id="cf-name" name="name" required>
+          </div>
+
+          <div class="contact-field">
+            <label class="contact-label" for="cf-email">Email</label>
+            <input class="contact-input" type="email" id="cf-email" name="email" required>
+          </div>
+
+          <div class="contact-field">
+            <label class="contact-label" for="cf-phone">Phone <span class="opt">(optional)</span></label>
+            <input class="contact-input" type="tel" id="cf-phone" name="phone">
+          </div>
+
+          <div class="contact-field">
+            <label class="contact-label" for="cf-interest">What are you interested in?</label>
+            <select class="contact-select" id="cf-interest" name="interest" required>
+              <option value="">Choose one…</option>
+              <optgroup label="For Businesses">
+                <option value="Bookkeeping, Automation &amp; Setup">Bookkeeping, Automation &amp; Setup</option>
+                <option value="Financial Statements &amp; Statutory Filings">Financial Statements &amp; Statutory Filings</option>
+                <option value="Making Tax Digital Compliance">Making Tax Digital Compliance</option>
+                <option value="Fractional CFO &amp; Strategic Advisory">Fractional CFO &amp; Strategic Advisory</option>
+              </optgroup>
+              <optgroup label="For Individuals">
+                <option value="Personal Tax Return — Self Assessment">Personal Tax Return — Self Assessment</option>
+                <option value="Tax Planning &amp; Optimisation">Tax Planning &amp; Optimisation</option>
+                <option value="Personal Financial Planning &amp; Budgeting">Personal Financial Planning &amp; Budgeting</option>
+              </optgroup>
+              <option value="Other / Not sure yet">Other / Not sure yet</option>
+            </select>
+          </div>
+
+          <div class="contact-field">
+            <label class="contact-label" for="cf-message">Your message</label>
+            <textarea class="contact-textarea" id="cf-message" name="message" required placeholder="Tell us a bit about your situation or what you'd like to discuss…"></textarea>
+          </div>
+
+          <button class="contact-submit" type="submit">SEND MESSAGE</button>
+
+        </form>
+      </div>
+
+      <!-- Calendly side -->
+      <div class="contact-card">
+        <div class="contact-card-eyebrow">READY TO TALK</div>
+        <div class="contact-card-title">Book a <em>free 30-min call.</em></div>
+        <div class="contact-card-sub">Pick a time that works for you. A focused, honest conversation — no obligation, no hard sell.</div>
+
+        <!-- Calendly inline widget -->
+        <div class="contact-calendly-wrap">
+          <!-- Live Calendly booking calendar -->
+          <div class="calendly-inline-widget" data-url="https://calendly.com/murangiandco/30min" style="min-width:320px;height:480px;"></div>
+          <!-- Fallback shown while the calendar loads / if scripts are blocked -->
+          <div class="contact-calendly-placeholder" id="calendly-placeholder">
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="rgba(184,144,42,0.65)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <div class="contact-calendly-placeholder-title">Loading the booking calendar</div>
+            <div class="contact-calendly-placeholder-note">If the calendar does not appear, <a href="https://calendly.com/murangiandco/30min" target="_blank" rel="noopener">open the booking page in a new tab</a> or use the form on the left.</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Contact details strip -->
+  <div class="contact-details">
+    <div class="contact-details-grid">
+
+      <div class="contact-detail">
+        <div class="contact-detail-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <div>
+          <div class="contact-detail-label">EMAIL</div>
+          <a class="contact-detail-value" href="mailto:murangiandco@gmail.com">murangiandco@gmail.com</a>
+        </div>
+      </div>
+
+      <div class="contact-detail">
+        <div class="contact-detail-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.75 12 19.79 19.79 0 0 1 1.72 3.27 2 2 0 0 1 3.7 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <div>
+          <div class="contact-detail-label">PHONE</div>
+          <a class="contact-detail-value" href="tel:+441617265041">0161 726 5041</a>
+        </div>
+      </div>
+
+      <div class="contact-detail">
+        <div class="contact-detail-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#b8902a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </div>
+        <div>
+          <div class="contact-detail-label">LINKEDIN</div>
+          <a class="contact-detail-value" href="https://linkedin.com/company/murangi-co" target="_blank" rel="noopener">linkedin.com/company/murangi-co</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div><div class="footer-logo">MURANGI & CO</div><div class="footer-tagline">FINANCIAL ADVISORY</div><div class="footer-desc">Chartered Accountants · United Kingdom<br>Simplifying Finances. Empowering Growth.</div></div>
+    <div><div class="footer-col-title">NAVIGATION</div><span class="footer-link" onclick="showPage('home')">Home</span><span class="footer-link" onclick="showPage('about')">About Us</span><span class="footer-link" onclick="showPage('services')">Services</span><span class="footer-link" onclick="showPage('packages')">Packages</span><span class="footer-link" onclick="showPage('contact')">Contact</span></div>
+    <div><div class="footer-col-title">CONTACT</div><span class="footer-link"><a href="mailto:murangiandco@gmail.com" style="color:inherit;text-decoration:none;">murangiandco@gmail.com</a></span><span class="footer-link"><a href="tel:+441617265041" style="color:inherit;text-decoration:none;">0161 726 5041</a></span><span class="footer-link"><a href="https://linkedin.com/company/murangi-co" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">LinkedIn</a></span></div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-bottom-text">ACA QUALIFIED · ICAEW MEMBER · XERO CERTIFIED ADVISER · REGISTERED IN ENGLAND AND WALES</span>
+    <span class="footer-bottom-text">© 2025 Murangi & Co. All rights reserved.</span>
+  </div>
+</div>
+
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script src="js/script.js"></script>
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AccountingService",
+  "name": "Murangi & Co",
+  "description": "UK chartered accountancy practice",
+  "url": "https://www.murangiandco.com/",
+  "email": "murangiandco@gmail.com",
+  "telephone": "+44 161 726 5041",
+  "areaServed": "GB",
+  "sameAs": ["https://linkedin.com/company/murangi-co"]
+}
+</script>
+</body>
+</html>
